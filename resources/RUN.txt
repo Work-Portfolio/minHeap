@@ -1,0 +1,2339 @@
+CONTENTS
+-----------------------------------------------------
+Test file: resources/ "numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt" | (MEMSIZE 50)  Line: 10
+Test file: resources/"numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt"     | (MEMSIZE 80)  Line: 125
+Test file: resources/"numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt" |  (MEMSIZE 5) Line: 216
+Test file: resources/"numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt", "numbers05.txt" | (MEMSIZE 100)  Line: 955
+-----------------------------------------------------
+
+-----------------------------------------------------
+-----------------------------------------------------
+Original Files:
+Test file: resources/ "numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt"
+
+OutputFile Tested by TestOutput:
+Test file: resources/ result_using_min_heap_20170316_080103.txt
+
+NOTES: Run from SortFileData using condition given: MEMSIZE 50
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/bin/java -Didea.launcher.port=7547 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/tools.jar:/Users/zachrooney/IdeaProjects/Project Outputs/production/rooneyz-project08:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain sorters.SortFileData
+Number of arrays holding file input = 12
+
+Phase 1 : Sorted file chunks 0:
+sort file chunk[0] with size 50:
+----------------------------------------------------------------------
+0,0,16,23,31,40,41,86,90,116,143,163,180,201,209,267,284,311,343,365,390,
+397,408,413,424,434,462,481,486,493,507,526,528,543,571,588,616,651,685,
+707,714,770,810,825,829,918,937,940,988,990,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 1:
+sort file chunk[1] with size 50:
+----------------------------------------------------------------------
+7,12,13,20,22,36,54,76,103,138,145,145,153,164,194,196,201,220,229,265,
+298,313,338,340,340,345,419,509,511,517,523,526,528,534,558,577,587,698,
+727,736,757,784,816,839,844,895,942,969,977,979,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 2:
+sort file chunk[2] with size 28:
+----------------------------------------------------------------------
+80,194,238,251,282,312,332,340,378,392,424,426,449,510,521,543,553,609,
+642,673,742,846,871,878,897,904,929,939,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 3:
+sort file chunk[3] with size 50:
+----------------------------------------------------------------------
+47,63,81,152,202,205,221,228,266,287,334,336,371,382,394,402,426,442,457,
+479,491,492,494,498,524,544,544,559,680,714,750,771,800,803,804,804,808,
+816,819,824,829,868,903,922,946,963,967,985,990,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 4:
+sort file chunk[4] with size 50:
+----------------------------------------------------------------------
+10,69,85,116,168,173,210,214,218,238,238,252,258,268,286,300,311,325,379,
+391,422,474,521,529,574,582,585,592,623,687,689,694,704,718,740,792,807,
+811,814,817,825,880,909,932,933,948,957,957,971,979,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 5:
+sort file chunk[5] with size 28:
+----------------------------------------------------------------------
+21,45,140,143,165,207,211,233,264,281,372,381,464,503,528,534,580,604,646,
+650,763,774,841,855,896,898,911,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 6:
+sort file chunk[6] with size 50:
+----------------------------------------------------------------------
+5,29,31,59,90,114,121,126,177,188,237,244,251,253,258,260,279,361,374,380,
+391,403,406,408,541,551,570,573,588,589,613,625,634,653,655,665,711,750,
+809,810,828,843,866,880,903,913,922,937,941,970,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 7:
+sort file chunk[7] with size 50:
+----------------------------------------------------------------------
+3,38,41,57,120,129,134,166,190,209,233,246,247,274,315,322,322,350,353,
+355,408,409,424,433,434,445,451,481,491,521,526,539,547,593,602,603,644,
+673,677,696,719,802,816,832,960,966,976,981,994,995,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 8:
+sort file chunk[8] with size 28:
+----------------------------------------------------------------------
+44,46,108,166,275,314,338,385,416,417,421,436,470,505,510,519,580,586,679,
+703,709,786,823,824,880,892,932,966,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 9:
+sort file chunk[9] with size 50:
+----------------------------------------------------------------------
+45,63,67,78,84,122,129,152,217,217,224,229,232,238,254,258,267,273,278,
+285,295,306,388,421,437,466,470,481,483,493,524,541,561,563,582,598,654,
+656,683,717,717,720,731,744,816,824,838,844,901,934,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 10:
+sort file chunk[10] with size 50:
+----------------------------------------------------------------------
+28,40,61,65,67,68,71,109,110,145,148,179,274,334,344,345,427,431,449,468,
+483,510,528,533,552,595,622,652,659,727,729,743,757,758,807,812,837,882,
+888,912,915,937,952,966,977,979,988,989,991,992,
+----------------------------------------------------------------------
+
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 34 ms : 968104 ns
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/ "numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt"
+
+OutputFile Tested by TestOutput:
+Test file: resources/ result_using_min_heap_20170316_080143.txt
+
+NOTES: Run from SortFileData using condition given: MEMSIZE 80
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/bin/java -Didea.launcher.port=7549 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/tools.jar:/Users/zachrooney/IdeaProjects/Project Outputs/production/rooneyz-project08:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain sorters.SortFileData
+Number of arrays holding file input = 8
+
+Phase 1 : Sorted file chunks 0:
+sort file chunk[0] with size 80:
+----------------------------------------------------------------------
+0,0,7,16,23,31,40,41,54,76,86,90,103,116,138,143,145,145,163,164,180,194,
+201,201,209,220,265,267,284,311,313,338,340,343,345,365,390,397,408,413,
+419,424,434,462,481,486,493,507,509,511,523,526,528,534,543,571,588,616,
+651,685,707,714,736,757,770,784,810,825,829,839,895,918,937,940,942,969,
+977,979,988,990,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 1:
+sort file chunk[1] with size 48:
+----------------------------------------------------------------------
+12,13,20,22,36,80,153,194,196,229,238,251,282,298,312,332,340,340,378,392,
+424,426,449,510,517,521,526,528,543,553,558,577,587,609,642,673,698,727,
+742,816,844,846,871,878,897,904,929,939,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 2:
+sort file chunk[2] with size 80:
+----------------------------------------------------------------------
+47,63,69,81,85,116,152,173,202,205,210,214,218,221,228,238,252,258,266,
+268,287,300,311,334,336,371,379,382,391,394,402,426,442,457,474,479,491,
+492,494,498,524,544,544,559,574,582,585,680,687,689,714,750,771,792,800,
+803,804,804,807,808,811,814,816,817,819,824,829,868,880,903,922,932,946,
+957,963,967,971,985,990,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 3:
+sort file chunk[3] with size 48:
+----------------------------------------------------------------------
+10,21,45,140,143,165,168,207,211,233,238,264,281,286,325,372,381,422,464,
+503,521,528,529,534,580,592,604,623,646,650,694,704,718,740,763,774,825,
+841,855,896,898,909,911,933,948,957,979,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 4:
+sort file chunk[4] with size 80:
+----------------------------------------------------------------------
+3,5,29,31,41,59,90,114,121,126,129,134,166,177,188,209,233,237,244,246,
+251,253,258,260,274,279,322,322,350,353,355,361,374,380,391,403,406,408,
+409,424,433,434,445,451,541,547,551,570,573,588,589,602,603,613,625,634,
+653,655,665,673,696,711,719,750,802,809,810,828,843,866,880,903,913,922,
+937,941,966,970,976,994,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 5:
+sort file chunk[5] with size 48:
+----------------------------------------------------------------------
+38,44,46,57,108,120,166,190,247,275,314,315,338,385,408,416,417,421,436,
+470,481,491,505,510,519,521,526,539,580,586,593,644,677,679,703,709,786,
+816,823,824,832,880,892,932,960,966,981,995,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 6:
+sort file chunk[6] with size 80:
+----------------------------------------------------------------------
+45,61,63,67,67,68,71,78,84,110,122,129,152,217,217,224,229,232,238,254,
+258,267,273,278,285,295,306,334,344,388,421,431,437,449,466,470,481,483,
+483,493,510,524,541,552,561,563,582,598,622,652,654,656,683,717,717,720,
+727,729,731,743,744,757,758,812,816,824,837,838,844,882,901,915,934,937,
+952,966,977,979,988,992,
+----------------------------------------------------------------------
+
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 17 ms : 62133 ns
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/ "numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt"
+
+OutputFile Tested by TestOutput:
+Test file: resources/ result_using_min_heap_20170316_075836.txt
+
+NOTES: Run from SortFileData using condition given: MEMSIZE 5
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/bin/java -Didea.launcher.port=7548 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/tools.jar:/Users/zachrooney/IdeaProjects/Project Outputs/production/rooneyz-project08:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain sorters.SortFileData
+Number of arrays holding file input = 104
+
+Phase 1 : Sorted file chunks 0:
+sort file chunk[0] with size 5:
+----------------------------------------------------------------------
+90,143,163,413,685,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 1:
+sort file chunk[1] with size 5:
+----------------------------------------------------------------------
+397,462,829,918,940,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 2:
+sort file chunk[2] with size 5:
+----------------------------------------------------------------------
+0,40,116,209,571,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 3:
+sort file chunk[3] with size 5:
+----------------------------------------------------------------------
+41,267,365,390,408,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 4:
+sort file chunk[4] with size 5:
+----------------------------------------------------------------------
+16,31,86,180,424,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 5:
+sort file chunk[5] with size 5:
+----------------------------------------------------------------------
+284,493,507,526,825,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 6:
+sort file chunk[6] with size 5:
+----------------------------------------------------------------------
+201,434,481,588,990,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 7:
+sort file chunk[7] with size 5:
+----------------------------------------------------------------------
+23,311,543,707,770,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 8:
+sort file chunk[8] with size 5:
+----------------------------------------------------------------------
+343,528,714,810,988,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 9:
+sort file chunk[9] with size 5:
+----------------------------------------------------------------------
+0,486,616,651,937,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 10:
+sort file chunk[10] with size 5:
+----------------------------------------------------------------------
+419,509,523,736,757,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 11:
+sort file chunk[11] with size 5:
+----------------------------------------------------------------------
+145,164,194,265,534,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 12:
+sort file chunk[12] with size 5:
+----------------------------------------------------------------------
+103,313,511,969,977,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 13:
+sort file chunk[13] with size 5:
+----------------------------------------------------------------------
+7,76,138,145,220,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 14:
+sort file chunk[14] with size 5:
+----------------------------------------------------------------------
+340,784,839,895,942,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 15:
+sort file chunk[15] with size 5:
+----------------------------------------------------------------------
+54,201,338,345,979,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 16:
+sort file chunk[16] with size 5:
+----------------------------------------------------------------------
+13,517,528,577,587,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 17:
+sort file chunk[17] with size 5:
+----------------------------------------------------------------------
+20,298,558,698,844,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 18:
+sort file chunk[18] with size 5:
+----------------------------------------------------------------------
+22,196,340,727,816,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 19:
+sort file chunk[19] with size 5:
+----------------------------------------------------------------------
+12,36,153,229,526,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 20:
+sort file chunk[20] with size 5:
+----------------------------------------------------------------------
+251,378,521,642,742,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 21:
+sort file chunk[21] with size 5:
+----------------------------------------------------------------------
+332,543,871,897,904,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 22:
+sort file chunk[22] with size 5:
+----------------------------------------------------------------------
+238,340,609,846,939,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 23:
+sort file chunk[23] with size 5:
+----------------------------------------------------------------------
+312,449,553,673,878,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 24:
+sort file chunk[24] with size 5:
+----------------------------------------------------------------------
+80,194,282,392,510,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 25:
+sort file chunk[25] with size 3:
+----------------------------------------------------------------------
+424,426,929,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 26:
+sort file chunk[26] with size 5:
+----------------------------------------------------------------------
+334,498,544,714,800,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 27:
+sort file chunk[27] with size 5:
+----------------------------------------------------------------------
+221,336,680,804,824,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 28:
+sort file chunk[28] with size 5:
+----------------------------------------------------------------------
+47,266,371,457,559,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 29:
+sort file chunk[29] with size 5:
+----------------------------------------------------------------------
+63,81,202,426,819,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 30:
+sort file chunk[30] with size 5:
+----------------------------------------------------------------------
+287,491,524,829,868,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 31:
+sort file chunk[31] with size 5:
+----------------------------------------------------------------------
+402,479,544,750,803,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 32:
+sort file chunk[32] with size 5:
+----------------------------------------------------------------------
+228,394,808,967,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 33:
+sort file chunk[33] with size 5:
+----------------------------------------------------------------------
+152,205,494,771,816,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 34:
+sort file chunk[34] with size 5:
+----------------------------------------------------------------------
+442,903,922,963,990,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 35:
+sort file chunk[35] with size 5:
+----------------------------------------------------------------------
+382,492,804,946,985,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 36:
+sort file chunk[36] with size 5:
+----------------------------------------------------------------------
+210,582,687,689,880,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 37:
+sort file chunk[37] with size 5:
+----------------------------------------------------------------------
+252,379,811,817,971,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 38:
+sort file chunk[38] with size 5:
+----------------------------------------------------------------------
+85,214,238,474,957,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 39:
+sort file chunk[39] with size 5:
+----------------------------------------------------------------------
+116,258,268,391,792,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 40:
+sort file chunk[40] with size 5:
+----------------------------------------------------------------------
+69,173,311,574,932,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 41:
+sort file chunk[41] with size 5:
+----------------------------------------------------------------------
+218,300,585,807,814,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 42:
+sort file chunk[42] with size 5:
+----------------------------------------------------------------------
+286,422,718,825,948,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 43:
+sort file chunk[43] with size 5:
+----------------------------------------------------------------------
+521,592,623,704,933,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 44:
+sort file chunk[44] with size 5:
+----------------------------------------------------------------------
+325,529,694,740,957,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 45:
+sort file chunk[45] with size 5:
+----------------------------------------------------------------------
+10,168,238,909,979,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 46:
+sort file chunk[46] with size 5:
+----------------------------------------------------------------------
+211,774,841,898,911,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 47:
+sort file chunk[47] with size 5:
+----------------------------------------------------------------------
+143,264,381,528,763,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 48:
+sort file chunk[48] with size 5:
+----------------------------------------------------------------------
+165,207,281,534,896,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 49:
+sort file chunk[49] with size 5:
+----------------------------------------------------------------------
+21,140,372,580,604,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 50:
+sort file chunk[50] with size 5:
+----------------------------------------------------------------------
+45,233,503,650,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 51:
+sort file chunk[51] with size 3:
+----------------------------------------------------------------------
+464,646,855,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 52:
+sort file chunk[52] with size 5:
+----------------------------------------------------------------------
+90,177,258,634,711,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 53:
+sort file chunk[53] with size 5:
+----------------------------------------------------------------------
+244,260,551,880,913,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 54:
+sort file chunk[54] with size 5:
+----------------------------------------------------------------------
+59,188,403,750,970,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 55:
+sort file chunk[55] with size 5:
+----------------------------------------------------------------------
+29,126,408,655,810,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 56:
+sort file chunk[56] with size 5:
+----------------------------------------------------------------------
+237,253,380,653,809,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 57:
+sort file chunk[57] with size 5:
+----------------------------------------------------------------------
+31,251,391,588,937,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 58:
+sort file chunk[58] with size 5:
+----------------------------------------------------------------------
+121,573,589,625,866,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 59:
+sort file chunk[59] with size 5:
+----------------------------------------------------------------------
+279,361,406,665,828,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 60:
+sort file chunk[60] with size 5:
+----------------------------------------------------------------------
+5,374,541,613,922,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 61:
+sort file chunk[61] with size 5:
+----------------------------------------------------------------------
+114,570,843,903,941,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 62:
+sort file chunk[62] with size 5:
+----------------------------------------------------------------------
+3,129,409,433,994,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 63:
+sort file chunk[63] with size 5:
+----------------------------------------------------------------------
+166,451,547,673,966,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 64:
+sort file chunk[64] with size 5:
+----------------------------------------------------------------------
+274,322,434,445,976,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 65:
+sort file chunk[65] with size 5:
+----------------------------------------------------------------------
+209,246,322,350,602,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 66:
+sort file chunk[66] with size 5:
+----------------------------------------------------------------------
+233,353,603,719,802,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 67:
+sort file chunk[67] with size 5:
+----------------------------------------------------------------------
+41,134,355,424,696,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 68:
+sort file chunk[68] with size 5:
+----------------------------------------------------------------------
+57,190,315,408,491,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 69:
+sort file chunk[69] with size 5:
+----------------------------------------------------------------------
+247,521,644,677,981,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 70:
+sort file chunk[70] with size 5:
+----------------------------------------------------------------------
+120,481,593,960,995,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 71:
+sort file chunk[71] with size 5:
+----------------------------------------------------------------------
+38,526,539,816,832,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 72:
+sort file chunk[72] with size 5:
+----------------------------------------------------------------------
+46,786,823,824,892,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 73:
+sort file chunk[73] with size 5:
+----------------------------------------------------------------------
+416,436,505,580,586,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 74:
+sort file chunk[74] with size 5:
+----------------------------------------------------------------------
+44,108,166,314,470,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 75:
+sort file chunk[75] with size 5:
+----------------------------------------------------------------------
+338,510,519,880,966,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 76:
+sort file chunk[76] with size 5:
+----------------------------------------------------------------------
+385,417,421,679,703,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 77:
+sort file chunk[77] with size 3:
+----------------------------------------------------------------------
+275,709,932,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 78:
+sort file chunk[78] with size 5:
+----------------------------------------------------------------------
+63,129,466,493,731,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 79:
+sort file chunk[79] with size 5:
+----------------------------------------------------------------------
+152,229,232,481,824,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 80:
+sort file chunk[80] with size 5:
+----------------------------------------------------------------------
+278,561,598,744,816,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 81:
+sort file chunk[81] with size 5:
+----------------------------------------------------------------------
+78,217,656,717,838,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 82:
+sort file chunk[82] with size 5:
+----------------------------------------------------------------------
+238,273,295,563,683,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 83:
+sort file chunk[83] with size 5:
+----------------------------------------------------------------------
+84,285,421,470,483,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 84:
+sort file chunk[84] with size 5:
+----------------------------------------------------------------------
+122,217,267,541,717,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 85:
+sort file chunk[85] with size 5:
+----------------------------------------------------------------------
+254,306,524,654,934,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 86:
+sort file chunk[86] with size 5:
+----------------------------------------------------------------------
+45,67,720,844,901,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 87:
+sort file chunk[87] with size 5:
+----------------------------------------------------------------------
+224,258,388,437,582,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 88:
+sort file chunk[88] with size 5:
+----------------------------------------------------------------------
+729,743,915,952,988,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 89:
+sort file chunk[89] with size 5:
+----------------------------------------------------------------------
+67,71,652,937,992,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 90:
+sort file chunk[90] with size 5:
+----------------------------------------------------------------------
+110,483,758,882,977,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 91:
+sort file chunk[91] with size 5:
+----------------------------------------------------------------------
+68,431,837,966,979,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 92:
+sort file chunk[92] with size 5:
+----------------------------------------------------------------------
+334,510,622,757,812,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 93:
+sort file chunk[93] with size 5:
+----------------------------------------------------------------------
+61,344,449,552,727,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 94:
+sort file chunk[94] with size 5:
+----------------------------------------------------------------------
+65,109,345,427,468,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 95:
+sort file chunk[95] with size 5:
+----------------------------------------------------------------------
+148,528,659,989,991,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 96:
+sort file chunk[96] with size 5:
+----------------------------------------------------------------------
+40,179,274,807,912,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 97:
+sort file chunk[97] with size 5:
+----------------------------------------------------------------------
+28,145,533,595,888,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 98:
+sort file chunk[98] with size 5:
+----------------------------------------------------------------------
+228,435,575,717,752,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 99:
+sort file chunk[99] with size 5:
+----------------------------------------------------------------------
+40,233,486,678,990,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 100:
+sort file chunk[100] with size 5:
+----------------------------------------------------------------------
+91,318,608,620,771,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 101:
+sort file chunk[101] with size 5:
+----------------------------------------------------------------------
+39,494,602,937,994,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 102:
+sort file chunk[102] with size 5:
+----------------------------------------------------------------------
+71,166,646,745,826,
+----------------------------------------------------------------------
+
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 31 ms : 379136 ns
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/ "numbers01.txt", "numbers02.txt", "numbers03.txt", "numbers04.txt", "numbers05.txt"
+
+OutputFile Tested by TestOutput:
+Test file: resources/ result_using_min_heap_20170316_081051.txt
+
+NOTES:  Run from SortFileData using MEMSIZE: 100 and large number file.
+-----------------------------------------------------
+/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/bin/java -Didea.launcher.port=7547 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/tools.jar:/Users/zachrooney/IdeaProjects/Project Outputs/production/rooneyz-project08:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain sorters.SortFileData
+Number of arrays holding file input = 108
+
+Phase 1 : Sorted file chunks 0:
+sort file chunk[0] with size 100:
+----------------------------------------------------------------------
+0,0,7,12,13,16,20,22,23,31,36,40,41,54,76,86,90,103,116,138,143,145,145,
+153,163,164,180,194,196,201,201,209,220,229,265,267,284,298,311,313,338,
+340,340,343,345,365,390,397,408,413,419,424,434,462,481,486,493,507,509,
+511,517,523,526,526,528,528,534,543,558,571,577,587,588,616,651,685,698,
+707,714,727,736,757,770,784,810,816,825,829,839,844,895,918,937,940,942,
+969,977,979,988,990,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 1:
+sort file chunk[1] with size 28:
+----------------------------------------------------------------------
+80,194,238,251,282,312,332,340,378,392,424,426,449,510,521,543,553,609,
+642,673,742,846,871,878,897,904,929,939,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 2:
+sort file chunk[2] with size 100:
+----------------------------------------------------------------------
+10,47,63,69,81,85,116,152,168,173,202,205,210,214,218,221,228,238,238,252,
+258,266,268,286,287,300,311,325,334,336,371,379,382,391,394,402,422,426,
+442,457,474,479,491,492,494,498,521,524,529,544,544,559,574,582,585,592,
+623,680,687,689,694,704,714,718,740,750,771,792,800,803,804,804,807,808,
+811,814,816,817,819,824,825,829,868,880,903,909,922,932,933,946,948,957,
+957,963,967,971,979,985,990,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 3:
+sort file chunk[3] with size 28:
+----------------------------------------------------------------------
+21,45,140,143,165,207,211,233,264,281,372,381,464,503,528,534,580,604,646,
+650,763,774,841,855,896,898,911,993,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 4:
+sort file chunk[4] with size 100:
+----------------------------------------------------------------------
+3,5,29,31,38,41,57,59,90,114,120,121,126,129,134,166,177,188,190,209,233,
+237,244,246,247,251,253,258,260,274,279,315,322,322,350,353,355,361,374,
+380,391,403,406,408,408,409,424,433,434,445,451,481,491,521,526,539,541,
+547,551,570,573,588,589,593,602,603,613,625,634,644,653,655,665,673,677,
+696,711,719,750,802,809,810,816,828,832,843,866,880,903,913,922,937,941,
+960,966,970,976,981,994,995,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 5:
+sort file chunk[5] with size 28:
+----------------------------------------------------------------------
+44,46,108,166,275,314,338,385,416,417,421,436,470,505,510,519,580,586,679,
+703,709,786,823,824,880,892,932,966,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 6:
+sort file chunk[6] with size 100:
+----------------------------------------------------------------------
+28,40,45,61,63,65,67,67,68,71,78,84,109,110,122,129,145,148,152,179,217,
+217,224,229,232,238,254,258,267,273,274,278,285,295,306,334,344,345,388,
+421,427,431,437,449,466,468,470,481,483,483,493,510,524,528,533,541,552,
+561,563,582,595,598,622,652,654,656,659,683,717,717,720,727,729,731,743,
+744,757,758,807,812,816,824,837,838,844,882,888,901,912,915,934,937,952,
+966,977,979,988,989,991,992,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 7:
+sort file chunk[7] with size 28:
+----------------------------------------------------------------------
+39,40,71,91,166,173,228,233,318,435,486,494,575,602,608,620,646,678,707,
+717,745,752,771,826,874,937,990,994,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 8:
+sort file chunk[8] with size 100:
+----------------------------------------------------------------------
+3,200,211,245,958,1055,1200,1207,1236,1252,1287,1292,1330,1419,1591,1613,
+1628,1638,1642,1712,1734,1846,1910,2001,2083,2120,2131,2243,2472,2540,2555,
+2681,2725,2856,3160,3190,3331,3362,3393,3544,3761,3775,4078,4438,4498,4583,
+4799,4939,4950,4952,5050,5085,5152,5258,5326,5550,5703,5721,5756,5910,5958,
+6118,6161,6184,6621,6685,6750,6758,6783,6837,7061,7083,7189,7289,7326,7477,
+7490,7526,7526,7663,7905,8021,8100,8229,8270,8290,8326,8353,8458,8558,8764,
+8813,8916,8986,9018,9027,9413,9485,9888,9909,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 9:
+sort file chunk[9] with size 100:
+----------------------------------------------------------------------
+20,26,103,172,310,333,376,407,491,728,764,877,1443,1498,1675,1798,1825,
+1873,1953,2036,2068,2118,2433,2632,2873,3134,3225,3307,3428,3504,3526,3758,
+3771,4034,4118,4155,4273,4378,4409,4471,4543,4667,4694,4766,4781,4834,4859,
+4893,4928,5011,5041,5214,5224,5415,5422,5449,5471,5485,5899,5910,6148,6169,
+6200,6242,6414,7120,7145,7221,7262,7273,7403,7427,7694,7709,7741,7804,7818,
+7823,7855,8130,8202,8214,8249,8388,8395,8429,8597,8639,8767,8772,8788,8945,
+9037,9394,9467,9480,9849,9901,9913,9976,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 10:
+sort file chunk[10] with size 100:
+----------------------------------------------------------------------
+11,116,131,151,369,479,488,549,700,799,806,836,915,922,934,987,1077,1350,
+1603,1795,1874,2011,2039,2191,2261,2283,2433,2496,2546,2587,2637,2757,2782,
+2944,3490,3870,3878,3954,4071,4145,4377,4470,4643,4668,4767,4789,4798,5127,
+5321,5375,5386,5440,5549,5605,5734,5835,5842,5958,6080,6123,6130,6264,6301,
+6305,6362,6549,6724,6841,7100,7305,7348,7374,7501,7579,7630,7722,7726,7780,
+7829,8199,8495,8582,8592,8636,8765,8794,8879,9140,9185,9197,9237,9526,9645,
+9712,9731,9743,9819,9883,9950,9973,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 11:
+sort file chunk[11] with size 100:
+----------------------------------------------------------------------
+5,163,186,378,429,734,998,1059,1231,1233,1355,1427,1479,1635,1802,1842,
+1951,1959,1959,1988,2168,2269,2281,2287,2447,2597,2709,2784,3047,3059,3171,
+3244,3299,3306,3352,3406,3412,3415,3531,3725,3732,3772,3780,3949,4031,4111,
+4322,4509,4656,4689,4703,4820,4858,4898,4917,5372,5372,5421,5422,5496,5563,
+5656,5787,5804,5852,5899,6010,6071,6382,6421,6522,6544,6590,6729,6842,6893,
+7002,7009,7017,7313,7473,7758,7786,7938,8023,8188,8240,8307,8309,8332,8411,
+8539,8565,8829,9081,9429,9688,9860,9880,9883,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 12:
+sort file chunk[12] with size 100:
+----------------------------------------------------------------------
+18,42,115,554,583,631,754,901,944,962,992,1246,1273,1315,1479,1768,1885,
+1886,2216,2264,2328,2456,2456,2487,2574,3124,3156,3204,3317,3400,3773,3798,
+3886,4246,4281,4444,4451,4563,4624,5024,5044,5195,5201,5259,5351,5423,5512,
+5515,5543,5574,5613,5772,5883,5924,5936,5946,5960,6012,6091,6183,6272,6465,
+6507,6525,6761,6865,6993,7199,7274,7356,7425,7506,7579,7672,7731,7850,8116,
+8130,8130,8422,8502,8558,8668,8677,8694,8752,8860,9014,9065,9175,9313,9358,
+9429,9470,9546,9575,9678,9694,9866,9974,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 13:
+sort file chunk[13] with size 100:
+----------------------------------------------------------------------
+49,284,428,636,638,804,917,1112,1183,1189,1459,1551,1554,1785,2125,2158,
+2175,2259,2909,2931,2989,3103,3174,3480,3520,3593,3718,3861,3873,4093,4174,
+4209,4418,4460,4575,4582,4791,4840,5051,5205,5234,5281,5381,5481,5611,5657,
+5695,5790,5920,5962,6041,6069,6181,6269,6276,6395,6401,6403,6403,6590,6597,
+6644,6774,6822,6866,7058,7088,7113,7178,7198,7201,7574,7627,7679,7689,7714,
+7773,7895,7896,7966,7977,8145,8150,8227,8242,8417,8435,8746,8753,8763,8905,
+9517,9536,9565,9575,9616,9677,9842,9870,9963,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 14:
+sort file chunk[14] with size 100:
+----------------------------------------------------------------------
+78,163,200,253,327,527,558,562,596,751,752,852,942,969,1005,1036,1092,1135,
+1449,1529,1673,1674,1734,1791,1811,1891,2155,2182,2295,2376,2769,2870,2892,
+2979,2979,3094,3259,3401,3752,3791,4053,4122,4322,4417,4420,4464,4467,4611,
+4631,4761,4909,4971,4991,5179,5245,5296,5400,5464,5616,5935,5989,6186,6375,
+6499,6617,6690,6785,6885,6977,7561,7586,7592,7681,7685,7696,7857,7893,7917,
+7986,7996,8066,8203,8664,8860,9064,9149,9203,9269,9334,9350,9402,9452,9536,
+9580,9642,9659,9865,9878,9966,9978,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 15:
+sort file chunk[15] with size 100:
+----------------------------------------------------------------------
+25,231,272,298,330,467,471,492,680,681,815,956,989,1066,1150,1310,1406,
+1428,1497,1540,1769,1794,1878,1920,2015,2095,2142,2224,2296,2344,2348,2568,
+2707,2845,3191,3270,3441,3634,3747,3775,3813,3964,4058,4170,4175,4191,4396,
+4410,4430,4441,4514,4593,4651,4881,5002,5425,5449,5659,5785,6026,6155,6169,
+6176,6302,6370,6399,6596,6881,6934,6938,6959,6964,6967,6990,7033,7062,7094,
+7098,7102,7133,7287,7435,7533,7556,7623,7633,7787,7836,8270,8350,8411,8697,
+9127,9137,9144,9302,9576,9607,9697,9725,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 16:
+sort file chunk[16] with size 100:
+----------------------------------------------------------------------
+100,155,187,209,212,328,349,435,472,524,784,810,1045,1179,1310,1433,1441,
+1448,1473,1562,1628,1650,1658,1668,1724,1776,1813,1858,1858,1911,2078,2211,
+2302,2309,2436,2576,2654,2819,2871,3020,3103,3152,3239,3265,3283,3494,3682,
+4037,4092,4092,4123,4457,4533,4558,4892,5022,5115,5180,5206,5236,5309,5620,
+5835,6188,6254,6288,6441,6476,6540,6675,6754,6789,6799,6933,7346,7617,7641,
+7688,7796,7887,8218,8245,8291,8308,8515,8543,8590,8651,8811,8845,8883,8885,
+9133,9151,9178,9298,9316,9325,9344,9367,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 17:
+sort file chunk[17] with size 100:
+----------------------------------------------------------------------
+482,522,544,548,596,642,655,763,793,920,1002,1027,1155,1162,1218,1250,1336,
+1487,1608,1636,2106,2487,2497,2523,2561,2679,2778,3052,3147,3402,3412,3425,
+3627,3659,3737,3789,3792,3836,3849,3878,3892,3995,4241,4429,4433,4500,4548,
+4859,4891,4911,5084,5095,5120,5210,5277,5390,5629,5690,5962,5963,5995,6070,
+6175,6191,6428,6441,6696,6804,6860,7010,7263,7265,7273,7324,7357,7396,7512,
+7553,7556,7583,7610,7634,7718,7769,7895,8291,8415,8562,8787,8889,9306,9488,
+9566,9641,9656,9674,9681,9751,9758,9877,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 18:
+sort file chunk[18] with size 100:
+----------------------------------------------------------------------
+160,282,327,526,548,581,714,790,792,802,814,865,1046,1239,1278,1618,1626,
+1675,1690,1866,1927,1962,2122,2194,2358,2445,2802,2832,3011,3104,3134,3148,
+3200,3275,3493,3581,3595,3642,3668,3669,3801,3922,3956,4049,4098,4308,4429,
+4623,4701,4877,4891,4894,4919,5051,5366,5504,5639,5716,5827,6028,6124,6398,
+6503,6582,6590,6593,6595,6613,6660,6701,6758,6937,7053,7109,7113,7197,7289,
+7470,7548,7599,7756,7790,7884,7973,8096,8199,8291,8310,8349,8379,8541,8663,
+9037,9282,9289,9495,9676,9698,9948,9973,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 19:
+sort file chunk[19] with size 100:
+----------------------------------------------------------------------
+13,168,373,387,470,506,626,670,1127,1257,1391,1588,1785,1915,2010,2053,
+2070,2103,2211,2535,2538,2708,2824,2932,3246,3252,3282,3349,3367,3454,3539,
+3550,3627,3683,3687,3797,3939,4003,4013,4109,4119,4308,4319,4348,4606,4627,
+4845,4920,4938,5138,5217,5306,5430,5547,5671,5953,5985,6033,6087,6165,6360,
+6545,6585,6728,6738,6790,6816,6840,6978,7174,7276,7348,7408,7447,7504,7608,
+7794,7806,8028,8191,8252,8375,8561,8725,8732,8897,8974,9011,9079,9394,9403,
+9459,9475,9538,9614,9738,9781,9821,9858,9949,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 20:
+sort file chunk[20] with size 100:
+----------------------------------------------------------------------
+25,221,248,434,563,716,909,919,973,1091,1212,1749,1993,2252,2282,2334,2392,
+2444,2466,2523,2530,2578,2775,2967,2994,3030,3172,3241,3273,3565,3711,3722,
+3993,4002,4128,4191,4193,4271,4623,4638,4746,4860,4925,4958,5097,5100,5115,
+5173,5203,5520,5620,5623,5666,5724,5925,6016,6220,6368,6497,6525,6537,6539,
+6637,6695,6699,6723,6864,6893,6979,7079,7137,7362,7581,7687,7747,7824,7929,
+7997,8072,8243,8331,8398,8437,8471,8520,8538,8706,8733,8883,8895,9037,9052,
+9150,9180,9612,9763,9809,9901,9946,9980,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 21:
+sort file chunk[21] with size 100:
+----------------------------------------------------------------------
+174,216,231,757,1068,1201,1205,1271,1315,1334,1521,1587,1610,1798,1806,
+1955,1961,2020,2180,2265,2408,2679,2808,3084,3161,3186,3190,3293,3309,3472,
+3479,3771,3801,3818,3843,3992,4002,4043,4050,4103,4119,4129,4170,4317,4344,
+4434,4478,4636,4675,4687,4856,4895,4911,5078,5136,5138,5184,5410,5457,5733,
+5747,5844,6020,6134,6427,6544,6695,6761,6776,6782,6809,6973,7062,7239,7271,
+7358,7470,7496,7524,7560,7671,7780,7886,7997,8465,8478,8489,8604,8634,8737,
+8778,8906,8917,8985,8994,9298,9362,9448,9594,9845,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 22:
+sort file chunk[22] with size 100:
+----------------------------------------------------------------------
+233,251,563,600,760,830,919,1093,1118,1152,1440,1560,1766,1810,1859,1896,
+1937,1982,2003,2011,2191,2380,2405,2526,2774,2875,2959,2959,2996,3094,3107,
+3117,3212,3341,3507,3959,3998,4130,4434,4499,4663,4708,4731,4765,4916,4926,
+5061,5152,5291,5350,5629,5638,5670,5695,5742,6045,6269,6286,6355,6460,6578,
+6666,6698,6878,6928,6966,7006,7051,7051,7147,7154,7194,7327,7328,7375,7515,
+7609,7869,7976,8129,8160,8195,8211,8332,8448,8594,8694,8759,8804,8881,8882,
+8942,9111,9123,9323,9404,9494,9748,9822,9978,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 23:
+sort file chunk[23] with size 100:
+----------------------------------------------------------------------
+26,244,510,755,799,823,925,1004,1033,1100,1120,1122,1242,1356,1559,1570,
+1614,1614,1649,1739,1796,1817,1822,2076,2168,2258,2347,2465,2543,2692,2785,
+2991,3000,3032,3549,3576,3596,3694,3709,3836,3864,3891,3899,3913,3999,4078,
+4106,4412,4415,4693,4792,4803,4876,4906,5141,5164,5214,5297,5409,5424,5459,
+5802,5939,6026,6157,6159,6232,6310,6331,6377,6444,6488,6664,6719,6815,6994,
+7105,7131,7520,7763,7861,7894,7991,8515,8531,8543,8671,8706,8801,9010,9079,
+9101,9257,9304,9461,9463,9486,9744,9747,9881,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 24:
+sort file chunk[24] with size 100:
+----------------------------------------------------------------------
+21,67,316,343,505,516,557,658,780,969,1087,1224,1336,1426,1494,1557,1890,
+1892,1918,2042,2063,2112,2228,2239,2640,2725,2788,2819,2825,2874,3275,3282,
+3363,3431,3451,3466,3481,3571,3579,3652,3734,3780,3806,3848,3863,4041,4046,
+4242,4261,4331,4652,4783,4925,4981,5273,5286,5360,5497,5656,5950,5960,5968,
+6082,6083,6216,6360,6380,6436,6716,6723,6767,6965,6994,7011,7220,7236,7428,
+7547,7596,7862,7889,7927,8059,8272,8410,8452,8621,8724,8736,8786,8927,9167,
+9305,9382,9457,9528,9569,9569,9874,9965,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 25:
+sort file chunk[25] with size 100:
+----------------------------------------------------------------------
+168,195,267,378,437,524,559,609,674,850,989,1054,1089,1114,1116,1211,1291,
+1316,1581,1703,1756,1856,1865,2035,2098,2241,2388,2459,2529,2648,2742,2761,
+3049,3074,3220,3364,3367,3432,3453,3463,3519,3609,3930,3942,4144,4208,4351,
+4560,4671,4693,4700,4804,4883,5233,5316,5930,6136,6146,6167,6264,6453,6479,
+6702,6731,6741,6756,6859,6931,7027,7073,7134,7267,7419,7436,7575,7663,7847,
+7861,8006,8014,8132,8149,8189,8359,8362,8449,8536,8557,8618,8726,8744,8771,
+8826,8832,9213,9278,9513,9527,9846,9906,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 26:
+sort file chunk[26] with size 100:
+----------------------------------------------------------------------
+353,387,463,595,624,695,969,1085,1092,1131,1202,1408,1530,1588,1608,1714,
+1815,1841,1860,1894,1955,1995,2108,2203,2290,2522,2651,2680,2681,2726,2738,
+2821,2927,2984,3091,3307,3342,3373,3556,3801,3828,3917,4002,4189,4193,4195,
+4239,4355,4421,4871,4908,4913,4923,5097,5302,5389,5409,5532,5649,5688,5771,
+5875,6001,6278,6438,6609,6664,6682,6889,6982,7173,7386,7418,7601,7748,7762,
+7765,7842,7852,8091,8124,8241,8247,8296,8346,8398,8515,8555,8703,8738,8803,
+9052,9092,9193,9404,9453,9472,9778,9810,9876,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 27:
+sort file chunk[27] with size 100:
+----------------------------------------------------------------------
+21,144,295,298,378,847,884,1029,1084,1317,1392,1513,1774,1791,1841,1914,
+1926,1937,1963,1963,1980,1999,2130,2134,2152,2311,2401,2438,2551,2900,2943,
+3054,3058,3110,3166,3227,3311,3351,3354,3367,3438,3502,3514,3597,3709,3754,
+3881,4151,4165,4306,4308,4355,4373,4440,4500,4526,4580,4616,4659,4737,5015,
+5194,5222,5263,5403,5455,5684,5966,5981,6116,6193,6264,6342,6483,6546,6557,
+6583,6603,7122,7244,7354,7370,7377,7756,7808,7899,7907,8187,8546,8683,8790,
+8808,8901,8906,8982,9210,9324,9469,9537,9618,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 28:
+sort file chunk[28] with size 100:
+----------------------------------------------------------------------
+37,52,58,194,231,533,649,744,1188,1240,1260,1375,1416,1472,1512,1527,1529,
+1563,1733,2341,2379,2662,2746,2885,2947,3071,3094,3244,3265,3338,3375,3631,
+3634,3660,3662,3665,3696,3720,3731,3747,3778,3890,4061,4178,4201,4218,4306,
+4606,4638,4763,5001,5168,5208,5325,5355,5415,5470,5515,5670,5731,5896,5985,
+6017,6060,6117,6254,6488,6720,6790,6853,6896,6949,7316,7357,7390,7466,7510,
+7511,7533,7541,7588,7710,7909,8015,8041,8299,8301,8426,8484,8499,8553,8705,
+9050,9085,9214,9747,9759,9846,9948,9949,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 29:
+sort file chunk[29] with size 100:
+----------------------------------------------------------------------
+49,775,935,991,1040,1245,1366,1828,1908,1952,1958,2111,2138,2297,2379,2405,
+2421,2457,2471,2537,2598,2728,2742,2743,2746,2762,2803,3027,3035,3243,3277,
+3316,3343,3415,3701,4023,4044,4149,4457,4463,4568,4651,4925,5031,5066,5180,
+5263,5398,5431,5436,5605,5658,5689,5724,5768,5802,5815,6006,6024,6067,6169,
+6171,6189,6225,6329,6372,6508,6908,6925,6992,7062,7119,7179,7419,7437,7469,
+7489,7542,7546,8211,8241,8297,8298,8493,8635,8688,8831,8860,9121,9150,9171,
+9221,9235,9268,9304,9535,9684,9699,9702,9943,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 30:
+sort file chunk[30] with size 100:
+----------------------------------------------------------------------
+0,8,13,56,296,299,387,525,651,961,1051,1092,1132,1305,1309,1311,1315,1551,
+1714,1742,1777,2007,2130,2599,2648,2747,2899,2963,3026,3038,3045,3176,3448,
+3510,3650,3689,3882,3892,4139,4185,4244,4287,4357,4447,4504,4516,4518,4625,
+4696,4809,4828,4865,5002,5116,5223,5260,5489,5594,5639,5903,5994,6242,6326,
+6327,6484,6610,6979,7035,7070,7153,7184,7191,7257,7370,7610,7682,7791,7931,
+7977,8019,8066,8214,8237,8346,8438,8537,8575,8694,8789,8856,8858,8904,9146,
+9255,9264,9585,9600,9689,9721,9929,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 31:
+sort file chunk[31] with size 100:
+----------------------------------------------------------------------
+36,133,212,219,243,414,416,625,789,1007,1324,1335,1355,1452,1493,1549,1586,
+1752,1836,1947,1975,2001,2030,2130,2363,2376,2604,2719,2737,2782,2976,3106,
+3362,3389,3390,3545,3818,4052,4373,4377,4398,4448,4632,4648,4778,4945,5193,
+5236,5295,5348,5490,5536,5622,5695,5742,5809,5926,6005,6314,6368,6586,6746,
+6777,6866,6886,6937,6941,6970,7021,7400,7435,7478,7480,7537,7664,7781,7846,
+7864,7987,8040,8344,8348,8362,8390,8403,8451,8505,8601,8635,8657,8708,8828,
+8896,9102,9450,9504,9540,9661,9749,9961,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 32:
+sort file chunk[32] with size 100:
+----------------------------------------------------------------------
+134,163,245,344,493,504,749,843,870,1251,1343,1479,1564,1846,1862,2112,
+2126,2464,2561,2801,2809,2842,2936,3013,3040,3220,3269,3327,3556,3674,3850,
+3984,4024,4405,4449,4481,4482,4608,4677,4937,5030,5223,5272,5282,5286,5332,
+5384,5557,5642,5717,6008,6022,6186,6200,6200,6223,6403,6496,6631,6753,6761,
+6840,6857,7184,7226,7338,7347,7414,7509,7545,7584,7692,7725,7780,7831,7883,
+7934,7976,8063,8279,8361,8361,8401,8465,8828,8850,9042,9112,9187,9240,9286,
+9288,9303,9494,9530,9557,9578,9741,9862,9914,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 33:
+sort file chunk[33] with size 100:
+----------------------------------------------------------------------
+42,74,348,369,478,488,547,741,882,1261,1297,1300,1352,1395,1437,1448,1568,
+1686,1697,1842,2186,2208,2332,2586,2609,2681,2753,2802,3090,3181,3204,3315,
+3316,3423,3426,3698,3783,3842,3856,3869,3926,3997,4415,4520,4528,4539,4637,
+4655,4869,5134,5221,5308,5320,5488,5788,5847,5908,5920,6035,6055,6188,6260,
+6309,6505,6618,6809,6820,6862,6915,7117,7209,7296,7317,7476,7730,7737,7741,
+7774,7916,7938,8020,8131,8183,8220,8279,8293,8384,8455,8541,8600,8637,8830,
+8903,8966,9462,9526,9654,9713,9852,9936,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 34:
+sort file chunk[34] with size 100:
+----------------------------------------------------------------------
+12,28,170,370,577,862,1135,1195,1402,1499,1737,1769,2015,2266,2367,2478,
+2529,2580,2615,2791,2890,2969,3210,3237,3394,3409,3439,3472,3529,3648,3667,
+3685,3808,3854,3908,4116,4171,4441,4458,4559,4635,4674,4700,4831,4856,4890,
+4900,5074,5171,5354,5444,5477,5742,5850,5862,5928,6032,6185,6309,6353,6374,
+6383,6399,6430,6431,6505,6780,6846,6959,7152,7234,7341,7394,7572,7813,7841,
+8008,8074,8085,8094,8144,8418,8517,8619,8731,8781,8799,9012,9114,9202,9254,
+9308,9363,9465,9518,9597,9605,9621,9774,9877,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 35:
+sort file chunk[35] with size 100:
+----------------------------------------------------------------------
+45,47,164,235,588,772,1130,1148,1324,1340,1394,1447,1512,1610,1753,1823,
+1953,1978,2031,2163,2238,2267,2498,2538,2689,2693,2780,2960,2996,3061,3282,
+3483,3528,3627,3739,3827,3874,4153,4200,4355,4379,4451,4563,4647,4731,4740,
+4772,4791,4816,5182,5234,5320,5342,5412,5458,5717,5789,5941,6062,6097,6164,
+6176,6413,6468,6613,6668,6686,6803,6817,6913,7046,7133,7221,7275,7406,7666,
+7724,7747,7762,8164,8194,8247,8305,8377,8484,8551,8742,8785,8820,8869,8951,
+9027,9151,9242,9291,9307,9486,9550,9749,9916,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 36:
+sort file chunk[36] with size 100:
+----------------------------------------------------------------------
+107,294,295,314,419,441,567,621,797,848,850,917,1080,1095,1148,1180,1335,
+1338,1401,1419,1463,1635,1677,1698,1821,1843,1893,1947,1952,1975,2008,2074,
+2119,2290,2441,2591,2593,2612,2706,2769,2816,3173,3226,3410,3477,3486,3673,
+3881,3995,4038,4149,4217,4271,4296,4377,4416,4967,5012,5143,5181,5225,5265,
+5276,5361,6022,6032,6123,6579,6595,6603,6700,6895,7359,7391,7518,7791,7882,
+7991,8153,8324,8336,8464,8558,8635,8643,8698,8713,8774,8789,8857,9006,9009,
+9190,9331,9412,9461,9490,9570,9627,9665,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 37:
+sort file chunk[37] with size 100:
+----------------------------------------------------------------------
+180,223,311,431,484,573,598,802,849,901,910,1007,1236,1348,1370,1627,1887,
+2207,2251,2257,2283,2676,2718,2910,2956,2963,3183,3482,3600,3617,3683,3723,
+3861,3871,4012,4164,4254,4327,4366,4375,4407,4443,4447,4500,4531,4565,4585,
+4620,4693,4694,4911,4967,4981,5109,5125,5285,5326,5432,5569,5688,5716,5811,
+5923,5940,6010,6141,6237,6302,6351,6496,7017,7035,7242,7329,7344,7379,7411,
+7562,7690,7698,7706,7770,7795,7830,7901,7965,8076,8424,8605,8885,8908,9049,
+9131,9176,9280,9320,9363,9606,9926,9998,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 38:
+sort file chunk[38] with size 100:
+----------------------------------------------------------------------
+324,453,595,717,848,857,1121,1145,1177,1624,1626,1720,1885,2109,2129,2205,
+2348,2399,2435,2528,2575,2579,2791,3075,3099,3282,3478,3591,3634,3640,3726,
+3948,4035,4326,4432,4461,4654,4739,4748,4819,4908,4939,5101,5141,5193,5210,
+5413,5477,5662,5730,5917,5984,6025,6263,6270,6300,6401,6529,6660,6718,7022,
+7116,7155,7259,7358,7384,7387,7414,7480,7510,7553,7591,7742,7748,7791,7842,
+7951,8115,8270,8301,8353,8451,8621,8750,8872,8875,8909,9007,9112,9138,9194,
+9362,9531,9568,9604,9725,9778,9916,9923,9964,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 39:
+sort file chunk[39] with size 100:
+----------------------------------------------------------------------
+187,439,527,730,833,860,898,959,994,1008,1046,1665,1721,2047,2130,2137,
+2172,2262,2291,2435,2461,2522,2525,2579,2631,2662,2981,3088,3105,3193,3232,
+3270,3278,3385,3418,3473,3506,3721,3723,3763,3772,3831,3921,3925,4775,4903,
+4996,5148,5179,5285,5342,5490,5588,5625,5681,5692,6198,6358,6372,6418,6525,
+6547,6605,6657,6660,6726,6963,7217,7252,7276,7353,7402,7632,7783,7822,7873,
+8058,8196,8233,8346,8379,8475,8602,8676,8685,8753,8870,8881,8904,9042,9216,
+9402,9503,9511,9591,9612,9617,9782,9835,9871,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 40:
+sort file chunk[40] with size 100:
+----------------------------------------------------------------------
+136,194,210,235,386,598,662,758,813,899,935,974,1038,1148,1408,1427,1485,
+1588,1657,1705,1931,2019,2038,2434,2454,2517,2651,2698,2802,2824,2852,2866,
+2967,2967,2979,3053,3371,3596,3624,3812,3863,4005,4052,4054,4121,4180,4182,
+4228,4320,4357,4657,4659,4661,4713,4714,4917,5088,5203,5234,5378,5621,5670,
+6232,6473,6508,6613,6667,6673,6808,7052,7067,7388,7680,7708,7768,7771,7933,
+8092,8142,8333,8413,8417,8424,8578,8676,8842,8932,8955,9104,9137,9440,9580,
+9654,9710,9713,9802,9822,9823,9865,9959,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 41:
+sort file chunk[41] with size 100:
+----------------------------------------------------------------------
+29,89,105,430,552,678,840,956,1001,1059,1135,1491,1520,1524,1553,1805,1806,
+1830,1856,1873,1925,1989,2064,2101,2167,2230,2308,2412,2488,2542,2566,2604,
+2692,3020,3258,3261,3284,3303,3438,3571,3649,3719,3741,3754,3865,3970,4259,
+4326,4598,4622,4881,4901,4989,5088,5111,5155,5525,5525,5555,5674,5884,5895,
+6154,6157,6195,6383,6384,6506,6661,6712,6733,6770,6883,6895,6946,6950,7051,
+7206,7210,7519,7751,7791,8038,8043,8171,8306,8410,8507,8696,8839,8923,9120,
+9141,9308,9340,9404,9537,9751,9802,9860,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 42:
+sort file chunk[42] with size 100:
+----------------------------------------------------------------------
+184,216,360,372,403,499,511,564,675,748,995,1049,1179,1595,1674,1743,1834,
+1862,2035,2039,2108,2162,2193,2263,2328,2384,2409,2615,2708,2794,3007,3079,
+3095,3138,3362,3625,3640,3691,3731,3909,4079,4187,4397,4638,4987,5054,5082,
+5148,5237,5260,5366,5424,5510,5544,5679,5693,5752,5769,5801,5869,6099,6100,
+6129,6175,6517,6569,6574,6893,6950,6954,6983,7043,7247,7293,7304,7398,7509,
+7516,7694,7770,7953,7964,8107,8211,8383,8384,8789,8890,8936,9058,9100,9217,
+9244,9316,9342,9345,9349,9667,9718,9875,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 43:
+sort file chunk[43] with size 100:
+----------------------------------------------------------------------
+110,130,184,314,403,483,483,534,618,717,806,900,983,996,1064,1066,1150,
+1510,1533,1546,1744,1962,2154,2374,2810,3192,3391,3415,3491,3546,3564,3673,
+3721,3952,3976,4281,4315,4385,4501,4636,4697,4775,4785,4826,4832,5038,5244,
+5278,5294,5295,5481,5514,5560,5591,5653,5674,5692,5732,5951,5984,5997,6109,
+6130,6151,6220,6239,6272,6314,6358,6408,6647,6823,6930,6938,6994,7578,7582,
+7699,7895,7980,7992,8112,8134,8298,8602,8829,8836,8919,8948,8979,9273,9342,
+9392,9537,9555,9586,9612,9739,9792,9921,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 44:
+sort file chunk[44] with size 100:
+----------------------------------------------------------------------
+9,94,199,211,626,674,761,765,830,849,1074,1101,1187,1278,1568,1671,1821,
+2094,2190,2501,2508,2573,2636,2660,2883,3087,3187,3197,3208,3233,3599,3614,
+3745,3878,3937,3954,3968,4033,4043,4088,4139,4165,4223,4280,4314,4351,4355,
+4477,4873,4969,5235,5855,5862,5864,5898,5899,5921,5967,5983,6012,6209,6542,
+7011,7129,7244,7287,7366,7452,7564,7571,7664,7666,7685,7700,7764,7904,7927,
+8134,8225,8296,8300,8465,8517,8549,8554,8637,8856,8860,8907,9023,9331,9359,
+9363,9424,9438,9559,9599,9618,9833,9895,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 45:
+sort file chunk[45] with size 100:
+----------------------------------------------------------------------
+74,159,232,247,291,351,414,536,789,829,876,943,1015,1051,1094,1367,1382,
+1817,1872,1910,1914,1933,2250,2310,2376,2606,2647,2743,2843,3050,3057,3113,
+3164,3450,3690,3824,4390,4419,4454,4658,4669,4684,4718,4761,4777,4887,4904,
+4947,4998,5206,5289,5428,5477,5845,5936,6218,6341,6373,6385,6717,6771,6980,
+7100,7110,7209,7219,7270,7376,7487,7594,7708,7920,8042,8053,8114,8152,8215,
+8221,8341,8415,8433,8434,8454,8498,8544,8607,8713,8957,9043,9047,9083,9115,
+9388,9399,9434,9826,9867,9921,9922,9992,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 46:
+sort file chunk[46] with size 100:
+----------------------------------------------------------------------
+304,341,460,469,490,520,749,970,1076,1086,1118,1216,1258,1362,1379,1825,
+1877,1908,1931,2008,2098,2115,2211,2223,2243,2247,2340,2394,2451,2554,2576,
+2589,2635,2642,2884,2969,3196,3283,3398,3400,3415,3462,3576,3659,3669,4053,
+4060,4655,4753,4855,4870,5030,5543,5642,5882,5942,6140,6233,6257,6376,6412,
+6412,6562,6605,6912,6971,7270,7313,7412,7525,7538,7600,7627,7648,7708,7744,
+7747,7752,7821,7869,7869,8006,8110,8172,8332,8557,8718,8791,8791,8800,8829,
+8927,9105,9118,9193,9250,9262,9294,9411,9766,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 47:
+sort file chunk[47] with size 100:
+----------------------------------------------------------------------
+69,80,217,253,356,450,481,702,710,730,760,978,994,997,1067,1099,1101,1166,
+1299,1363,1482,1512,1580,1635,1661,1899,1948,2171,2398,2612,2620,2689,2720,
+2721,2722,2759,3265,3565,3669,3770,3797,4104,4143,4206,4228,4236,4249,4549,
+4628,4664,4752,4789,5256,5325,5345,5416,5671,5834,5922,6068,6086,6272,6337,
+6405,6424,6449,6726,6766,6786,6841,6856,7004,7053,7082,7119,7246,7380,7427,
+7437,7518,8033,8401,8442,8591,8687,8746,8788,8886,8886,8901,8952,8995,9015,
+9172,9274,9377,9545,9578,9636,9646,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 48:
+sort file chunk[48] with size 100:
+----------------------------------------------------------------------
+91,376,433,442,608,669,847,879,922,1083,1295,1323,1348,1349,1593,1640,1684,
+1782,1845,1976,2100,2111,2175,2357,2436,2450,2453,2598,2624,2662,2746,2840,
+2883,2960,3238,3317,3324,3477,3665,3830,4072,4081,4139,4144,4194,4292,4362,
+4490,4692,4994,5342,5368,5580,5776,5853,5862,5863,6040,6084,6137,6404,6414,
+6977,6978,7007,7024,7112,7312,7469,7547,7651,7656,7705,7733,7821,7894,8034,
+8111,8229,8287,8333,8425,8490,8520,8529,8584,8855,8910,8945,9111,9140,9227,
+9401,9570,9588,9634,9735,9744,9865,9903,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 49:
+sort file chunk[49] with size 100:
+----------------------------------------------------------------------
+77,147,168,247,257,320,382,534,572,634,711,822,1041,1137,1147,1161,1250,
+1250,1390,1520,1584,1753,1908,2176,2420,2502,2592,2593,2651,2733,2741,2925,
+2958,3003,3069,3179,3182,3286,3325,3329,3419,3529,3695,3710,3789,3870,3963,
+3993,4341,4586,4589,4609,4862,4914,5188,5190,5298,5319,5496,5858,5925,6012,
+6066,6218,6429,6434,6434,6436,6728,6862,6872,6920,7026,7310,7472,7695,7701,
+7822,7878,7912,7919,8109,8174,8183,8199,8270,8340,8533,8542,8607,8701,8867,
+9225,9226,9505,9520,9683,9691,9778,9783,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 50:
+sort file chunk[50] with size 100:
+----------------------------------------------------------------------
+7,88,325,442,490,541,566,574,589,883,910,1038,1044,1073,1110,1344,1359,
+1419,1473,1620,1752,1874,2022,2112,2155,2205,2386,2756,2936,3266,3376,3396,
+3505,3613,3622,3628,3705,3769,3844,4019,4245,4256,4290,4426,4434,4576,4634,
+4637,4645,4819,4879,4991,5337,5516,5517,5611,5654,5766,5791,5841,5950,6054,
+6092,6199,6232,6250,6316,6546,6639,6663,6687,6721,6967,7182,7248,7717,7805,
+7909,7916,7988,8051,8432,8528,8555,8719,8806,8959,8970,9009,9129,9294,9306,
+9356,9545,9557,9639,9862,9879,9885,9989,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 51:
+sort file chunk[51] with size 100:
+----------------------------------------------------------------------
+105,234,256,325,456,533,565,581,635,785,1016,1040,1295,1313,1486,1512,1569,
+1751,1914,2035,2110,2453,2498,2563,2597,2642,2682,2740,2783,2785,2832,2885,
+2909,3458,3514,3552,3768,3878,4094,4328,4373,4423,4545,4687,4742,4881,4889,
+4927,4992,5496,5535,5542,5637,5852,5912,5943,6006,6040,6094,6178,6244,6344,
+6715,6772,6964,6989,7170,7207,7589,7702,7884,7975,7987,8084,8273,8319,8346,
+8453,8473,8502,8695,8801,8867,8868,9030,9105,9150,9261,9262,9287,9366,9650,
+9652,9658,9716,9804,9863,9899,9933,9988,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 52:
+sort file chunk[52] with size 100:
+----------------------------------------------------------------------
+228,449,547,717,742,953,957,1009,1107,1241,1381,1399,1665,1676,1771,1824,
+1893,2113,2240,2247,2268,2280,2701,2799,2923,3078,3333,3409,3601,3601,3635,
+3843,3848,3975,4357,4461,4463,4763,4948,5383,5389,5528,5628,5661,5697,5718,
+5766,5950,5988,6144,6176,6195,6252,6281,6369,6469,6521,6602,6736,7003,7044,
+7057,7070,7078,7199,7221,7490,7503,7536,7575,7664,7720,7732,7796,7910,7993,
+8206,8316,8335,8364,8821,8873,8919,8998,9064,9122,9328,9340,9364,9383,9413,
+9440,9468,9530,9562,9590,9772,9814,9904,9986,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 53:
+sort file chunk[53] with size 100:
+----------------------------------------------------------------------
+8,22,84,105,360,413,499,605,810,830,858,889,997,1290,1298,1317,1319,1330,
+1504,1553,1620,1685,1771,1902,1942,2140,2215,2339,2633,2751,2765,2803,2883,
+2949,3150,3278,3852,4154,4251,4487,4559,4569,4738,4823,4909,4924,5198,5412,
+5527,5794,5865,5934,6036,6065,6074,6298,6386,6393,6487,6592,6615,6669,6704,
+6790,6876,7095,7192,7723,7826,7831,7863,7928,7975,7989,8058,8103,8219,8266,
+8291,8345,8360,8597,8632,8659,8675,8914,8969,9010,9199,9212,9225,9239,9252,
+9391,9563,9807,9824,9899,9929,9944,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 54:
+sort file chunk[54] with size 100:
+----------------------------------------------------------------------
+51,86,277,313,355,486,491,570,651,704,803,819,862,1025,1206,1212,1455,1528,
+1956,2070,2078,2223,2292,2424,2581,2650,2993,3006,3259,3283,3461,3488,3712,
+3734,3756,3764,3783,3921,4024,4166,4233,4336,4351,4364,4411,4722,4757,4781,
+4912,4952,4983,4994,5029,5188,5263,5286,5414,5479,5531,5728,5747,5785,5836,
+6359,6492,6542,6627,6763,6820,6878,6905,6911,7075,7100,7171,7356,7375,7482,
+7566,7744,7890,8164,8346,8632,8761,8898,8916,9034,9080,9171,9220,9237,9334,
+9344,9383,9518,9558,9714,9822,9917,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 55:
+sort file chunk[55] with size 100:
+----------------------------------------------------------------------
+18,66,99,125,203,425,664,667,863,901,1117,1193,1313,1325,1326,1377,1478,
+1536,1589,1753,1810,2073,2263,2502,2627,2637,2672,2846,2859,2978,2983,3222,
+3287,3314,3427,3435,3473,3499,3526,3651,3691,3703,3926,4009,4102,4127,4237,
+4371,4414,4430,4532,4632,4987,5002,5197,5206,5258,5303,5469,5471,5714,5760,
+5843,5844,5946,6016,6091,6122,6137,6225,6297,6430,6693,6727,6948,7180,7400,
+7433,7972,8008,8024,8055,8265,8303,8326,8488,8538,8543,8702,8748,8787,8829,
+9083,9378,9458,9515,9556,9721,9857,9885,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 56:
+sort file chunk[56] with size 100:
+----------------------------------------------------------------------
+34,108,166,317,327,496,778,931,1153,1184,1229,1378,1381,1548,1567,1629,
+1878,2178,2273,2385,2489,2517,2533,2708,2801,3075,3171,3179,3371,3416,3634,
+3664,3713,3758,3842,3845,3863,3984,4192,4334,4396,4458,4590,4626,4750,4778,
+4926,5038,5048,5072,5183,5239,5463,5554,5577,5587,5604,5613,5681,5751,6062,
+6065,6282,6627,6722,6936,6944,6985,7060,7095,7111,7192,7280,7451,7596,7784,
+7820,7889,7903,8006,8062,8086,8227,8250,8440,8501,8524,8570,8924,9001,9196,
+9231,9245,9266,9584,9707,9875,9896,9919,9986,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 57:
+sort file chunk[57] with size 100:
+----------------------------------------------------------------------
+22,333,379,505,594,801,993,1095,1207,1258,1362,1536,1612,1620,1630,1688,
+1922,1982,1982,1997,2008,2011,2419,2451,2456,2550,2685,2777,2985,3303,3304,
+3354,3405,3482,3515,3563,3619,3658,3691,3725,3860,3947,4001,4308,4590,4608,
+4743,4808,4842,4878,4976,5017,5031,5233,5391,5443,5506,5595,5605,5810,5933,
+5939,5954,6182,6244,6476,6505,6569,6684,6773,6874,6907,7104,7160,7309,7642,
+7939,8001,8067,8246,8448,8473,8526,8626,8636,8726,8795,8806,8821,8823,9021,
+9075,9255,9356,9643,9680,9721,9778,9957,9998,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 58:
+sort file chunk[58] with size 100:
+----------------------------------------------------------------------
+212,226,328,447,631,929,958,1030,1055,1071,1189,1214,1266,1291,1511,1675,
+1733,1767,1790,1858,1985,2153,2423,2526,2546,2594,2762,2841,2934,2989,3161,
+3206,3291,3305,3380,3499,3811,3961,3993,4066,4165,4168,4333,4337,4377,4483,
+4569,4586,4747,4956,4969,5356,5409,5416,5537,5709,5711,5840,6024,6024,6054,
+6075,6105,6153,6430,6513,6645,6715,6798,6811,6871,6914,6979,7056,7133,7355,
+7420,7479,7525,7533,7663,7727,7788,8101,8192,8217,8279,8439,8450,8507,8878,
+8959,9230,9286,9460,9533,9703,9811,9926,9989,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 59:
+sort file chunk[59] with size 100:
+----------------------------------------------------------------------
+11,21,64,189,220,302,416,444,924,936,1016,1365,1367,1410,1602,1664,1794,
+1824,1859,1919,1928,1940,2009,2086,2247,2253,2263,2421,2519,2602,2944,3047,
+3099,3110,3123,3227,3367,3412,3635,3727,3820,3971,3991,3992,3994,4002,4045,
+4112,4132,4169,4262,4393,4393,4409,4623,4784,4806,4827,4891,4922,5116,5261,
+5469,5560,5909,5988,6085,6098,6155,6319,6366,6367,6474,6681,6741,6788,6853,
+7467,7520,7699,7772,7776,7849,7856,8226,8417,8436,8533,8596,8739,8772,8889,
+8982,9034,9114,9182,9185,9232,9491,9887,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 60:
+sort file chunk[60] with size 100:
+----------------------------------------------------------------------
+106,121,615,645,719,890,893,933,1026,1147,1223,1257,1304,1351,1511,1615,
+1650,1791,1893,1914,1980,2052,2064,2089,2147,2151,2235,2479,2961,3129,3140,
+3145,3179,3264,3282,3447,3491,3510,3511,3536,3827,3892,3944,4040,4072,4216,
+4315,4423,4624,4774,4987,5245,5347,5391,5557,5574,5597,5779,5917,5918,6017,
+6168,6595,6756,6793,6818,6885,6905,6980,7081,7189,7234,7306,7321,7368,7409,
+7547,7568,7864,8089,8110,8132,8182,8332,8341,8381,8491,8656,8671,8707,8796,
+9021,9104,9273,9293,9422,9444,9545,9561,9940,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 61:
+sort file chunk[61] with size 100:
+----------------------------------------------------------------------
+87,102,129,164,276,318,374,404,499,582,614,797,966,1002,1012,1054,1167,
+1184,1242,1470,1658,1668,1704,1874,1892,2038,2130,2239,2434,2435,2435,2689,
+2818,2847,2861,3139,3155,3222,3273,3315,3462,3517,3685,3855,3994,4246,4365,
+4644,4973,4993,5210,5536,5756,5815,5843,6085,6157,6233,6446,6453,6480,6657,
+6664,6703,7302,7363,7441,7524,7698,7715,7829,7879,7894,8058,8132,8151,8311,
+8370,8553,8564,8607,8719,8835,8919,9045,9084,9102,9165,9212,9218,9229,9311,
+9338,9398,9412,9525,9676,9693,9803,9845,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 62:
+sort file chunk[62] with size 100:
+----------------------------------------------------------------------
+143,147,295,334,424,610,761,835,1002,1029,1121,1136,1276,1302,1373,1476,
+1543,1600,1617,1629,1656,1785,1937,1982,2009,2178,2278,2311,2367,2718,2778,
+2781,2796,2909,2974,3058,3168,3216,3243,3309,3427,3663,3671,3671,3739,3921,
+4064,4073,4264,4284,4515,4676,5166,5172,5209,5484,5720,5881,5929,5979,6139,
+6430,6596,6812,6818,6827,6856,6945,7119,7150,7198,7215,7233,7278,7303,7349,
+7673,7935,8061,8212,8483,8505,8622,8657,8880,9093,9119,9150,9151,9204,9266,
+9344,9432,9499,9516,9524,9528,9642,9949,9957,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 63:
+sort file chunk[63] with size 100:
+----------------------------------------------------------------------
+327,358,374,719,751,752,806,839,868,1179,1210,1424,1709,1725,1727,2013,
+2029,2163,2363,2365,2401,2578,2587,2591,2683,2706,2714,2785,2967,2996,3004,
+3100,3166,3248,3433,3447,3761,3785,3801,3888,3960,4182,4265,4350,4395,4475,
+4528,4587,4623,4657,4932,4943,4995,5231,5241,5300,5528,5888,5902,6008,6011,
+6105,6114,6157,6373,6540,6570,6594,6661,6727,6873,6906,6909,7024,7148,7193,
+7290,7316,7344,7552,7601,7604,7651,7727,8053,8133,8142,8332,8362,8419,8434,
+8518,8628,8749,8761,9146,9237,9396,9454,9969,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 64:
+sort file chunk[64] with size 100:
+----------------------------------------------------------------------
+52,312,331,403,462,711,820,946,1112,1151,1263,1386,1398,1416,1526,1594,
+1646,1666,1867,1944,1981,2019,2084,2163,2236,2260,2708,2852,2984,2999,3065,
+3078,3304,3341,3365,3387,3392,3483,3509,3564,3742,3833,3855,3863,3867,4023,
+4117,4650,4867,4957,4957,5074,5239,5240,5301,5308,5628,5822,6075,6087,6454,
+6572,6819,6913,7014,7036,7049,7086,7408,7503,7547,7708,7800,7944,7995,8087,
+8121,8149,8221,8272,8315,8519,8535,8541,8808,8893,8966,9204,9227,9408,9484,
+9491,9612,9614,9632,9792,9828,9930,9972,9988,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 65:
+sort file chunk[65] with size 100:
+----------------------------------------------------------------------
+179,204,258,259,322,373,421,440,530,970,1009,1077,1303,1561,1578,1736,1922,
+2051,2082,2099,2202,2309,2528,2625,2697,3144,3205,3206,3280,3326,3415,3419,
+3439,3478,3659,3916,4077,4185,4517,4540,4588,4632,4681,4856,4944,5042,5070,
+5146,5158,5491,5554,5567,5667,5780,5828,6017,6148,6175,6186,6239,6440,6468,
+6518,6560,6621,6699,6796,6826,7089,7260,7314,7358,7448,7577,7640,7718,7950,
+7951,8146,8231,8274,8435,8490,8530,8606,8625,8677,8822,8827,8909,8927,9015,
+9069,9171,9368,9392,9432,9500,9768,9976,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 66:
+sort file chunk[66] with size 100:
+----------------------------------------------------------------------
+61,104,127,313,412,648,650,779,862,875,895,926,988,1199,1359,1393,1464,
+1464,1702,1749,1824,1887,1999,2039,2253,2361,2402,2454,2479,2530,2579,2690,
+2719,3109,3129,3189,3615,3683,3750,3847,3855,3973,4048,4084,4120,4178,4305,
+4354,4413,4568,4732,5102,5341,5426,5582,5633,5652,5909,5922,6009,6010,6085,
+6138,6220,6378,7130,7276,7331,7489,7536,7548,7564,7565,7871,8110,8215,8329,
+8356,8358,8378,8466,8468,8704,8763,8767,8770,8791,8897,9026,9173,9202,9268,
+9312,9346,9461,9480,9528,9761,9791,9932,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 67:
+sort file chunk[67] with size 100:
+----------------------------------------------------------------------
+143,209,267,292,474,507,536,554,650,694,710,808,1374,1481,1534,1576,1646,
+1751,1780,1814,1833,1890,1956,2176,2371,2488,2507,2537,2645,2734,2739,2761,
+2822,2897,2985,3012,3021,3077,3098,3154,3178,3198,3208,3241,3490,3507,3521,
+3531,3790,3915,4179,4358,4404,4662,4673,4803,4813,5093,5120,5267,5306,5369,
+5530,5635,6102,6128,6141,6249,6267,6343,6352,6378,6399,6407,6603,6623,6670,
+7011,7218,7240,7384,7488,7739,7865,8099,8239,8367,8548,8708,8732,9013,9235,
+9324,9378,9386,9396,9787,9818,9986,9996,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 68:
+sort file chunk[68] with size 100:
+----------------------------------------------------------------------
+173,221,341,521,596,833,1133,1394,1512,1933,2066,2072,2106,2109,2284,2367,
+2576,2584,2747,2777,2865,2871,3005,3034,3125,3357,3443,3481,3527,3827,4017,
+4024,4026,4167,4175,4188,4339,4523,4725,4755,4899,4962,4992,5020,5110,5186,
+5225,5285,5350,5601,5715,5781,5849,5853,5956,6273,6337,6432,6885,7059,7200,
+7324,7384,7717,7892,7946,8019,8217,8239,8303,8371,8420,8428,8453,8512,8554,
+8576,8577,8710,8712,8714,8738,8812,8910,8933,9078,9084,9114,9132,9212,9290,
+9295,9471,9543,9561,9574,9688,9695,9776,9841,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 69:
+sort file chunk[69] with size 100:
+----------------------------------------------------------------------
+0,50,166,180,304,560,631,688,703,796,801,1077,1124,1147,1159,1559,1579,
+1608,1683,1819,1948,2086,2112,2243,2245,2261,2306,2417,2664,2678,2751,2974,
+3045,3100,3390,3481,3706,3724,3801,3841,3855,4042,4378,4399,4619,4701,4731,
+4758,4909,4975,4986,5076,5153,5329,5440,5453,5500,5561,5870,5937,6057,6118,
+6122,6264,6395,6549,6594,6604,6805,6819,7080,7387,7504,7833,8100,8164,8179,
+8410,8469,8505,8515,8527,8552,8721,8815,8822,9068,9153,9155,9195,9396,9406,
+9463,9518,9571,9644,9804,9804,9869,9920,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 70:
+sort file chunk[70] with size 100:
+----------------------------------------------------------------------
+122,426,509,512,527,559,734,745,1199,1251,1332,1374,1504,1610,1701,1719,
+1750,1761,1827,2008,2196,2423,2436,2441,2475,2618,2700,2736,2968,3156,3278,
+3410,3594,3617,3800,3855,3885,3941,4111,4287,4298,4312,4436,4489,4496,4557,
+4583,4609,4942,4950,5031,5063,5253,5447,5454,5498,5668,5746,5801,5867,5897,
+6037,6119,6132,6352,6552,6567,6575,6576,6698,6821,7113,7246,7340,7344,7404,
+7461,7569,7701,7808,7937,8008,8739,8753,8761,8808,8873,8940,8960,9021,9295,
+9581,9581,9705,9760,9819,9918,9966,9992,9996,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 71:
+sort file chunk[71] with size 100:
+----------------------------------------------------------------------
+61,167,227,443,537,563,642,673,718,804,880,902,1092,1094,1173,1250,1255,
+1374,1518,1519,1702,1892,1932,2068,2129,2201,2625,2765,2798,2807,2838,2901,
+2921,3256,3256,3488,3506,3706,3790,4058,4171,4224,4254,4267,4330,4338,4391,
+4599,4714,4730,4817,5057,5350,5364,5383,5416,5458,5855,5936,6268,6294,6305,
+6329,6378,6970,7035,7049,7122,7201,7467,7800,7838,7881,7958,8022,8047,8220,
+8301,8394,8443,8473,8557,8604,8776,8816,8881,8911,8917,9066,9220,9330,9407,
+9519,9530,9542,9658,9697,9747,9866,9954,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 72:
+sort file chunk[72] with size 100:
+----------------------------------------------------------------------
+368,428,515,653,678,684,898,1019,1075,1279,1501,1522,1571,1654,1694,1807,
+1954,1988,2083,2136,2269,2368,2375,2389,2640,2678,2708,2763,2842,2862,3025,
+3264,3323,3516,3563,3673,3699,3906,3960,4027,4144,4188,4451,4451,4497,4555,
+4613,4668,4673,4741,4786,4850,4951,5151,5413,5428,5493,5549,5552,5609,5701,
+5713,5747,5840,5911,5925,6570,6734,6801,6990,7063,7215,7265,7299,7338,7371,
+7617,7774,7921,7972,8019,8154,8156,8254,8303,8325,8442,8517,8830,8876,8972,
+9029,9102,9226,9227,9587,9711,9810,9873,9958,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 73:
+sort file chunk[73] with size 100:
+----------------------------------------------------------------------
+88,162,245,325,353,356,472,574,671,699,821,870,921,994,1009,1052,1171,1562,
+1594,1613,1693,1707,1725,1837,1880,2073,2184,2226,2284,2510,2598,2969,3096,
+3133,3180,3199,3315,3455,3585,3707,3746,3831,3976,3986,4114,4268,4300,4489,
+4500,4563,4713,4745,4749,4769,5086,5107,5148,5745,5766,5903,5927,5959,6074,
+6103,6190,6196,6240,6339,6603,6611,6626,6631,6887,6895,6950,6986,7025,7099,
+7184,7294,7396,7483,7567,7606,7664,7861,8489,8784,8829,8898,9023,9273,9449,
+9596,9618,9753,9809,9831,9872,9907,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 74:
+sort file chunk[74] with size 100:
+----------------------------------------------------------------------
+42,166,174,230,263,273,294,479,729,802,1148,1262,1375,1449,1640,1906,1925,
+1929,2173,2248,2378,2437,2500,2527,2563,2712,2733,2837,2892,2947,3044,3066,
+3178,3178,3437,3612,3670,3677,3746,3756,3788,3949,4029,4161,4180,4199,4270,
+4516,4559,4563,4636,4667,5035,5082,5086,5183,5259,5359,5409,5513,5797,5859,
+6138,6170,6383,6392,6421,6448,6550,6554,6651,6662,6791,6814,6897,6964,7263,
+7341,7368,7431,7455,7569,7728,7795,8003,8189,8191,8214,8344,8566,8753,8775,
+9033,9104,9274,9298,9483,9524,9645,9694,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 75:
+sort file chunk[75] with size 100:
+----------------------------------------------------------------------
+47,177,181,182,302,493,628,628,648,718,918,928,1127,1239,1302,1372,1400,
+1451,1455,1616,1866,2016,2088,2205,2537,2625,2720,2907,2990,3013,3088,3110,
+3594,3745,3868,3910,3940,3943,4080,4087,4107,4118,4137,4176,4202,4226,4336,
+4406,4458,4478,4506,4705,4797,4989,5171,5189,5275,5500,5581,5687,5805,5902,
+6237,6249,6350,6589,6591,6712,6736,6829,6938,6945,6999,7153,7293,7456,7960,
+7967,8042,8043,8047,8098,8124,8191,8284,8305,8334,8454,8501,8659,8730,8823,
+8863,9018,9064,9340,9583,9604,9869,9954,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 76:
+sort file chunk[76] with size 100:
+----------------------------------------------------------------------
+9,251,254,312,459,569,692,827,833,1038,1076,1255,1268,1360,1491,1581,1668,
+1883,1921,2010,2133,2202,2266,2405,2480,2547,2547,2853,2874,2959,3016,3026,
+3135,3176,3222,3373,3640,3732,3805,3808,3814,3901,3991,4009,4062,4167,4210,
+4230,4238,4479,4541,4560,4667,4786,4944,5026,5190,5231,5357,5414,5563,5654,
+5713,5839,5857,5979,6024,6093,6240,6380,6707,6711,6947,6983,7121,7149,7166,
+7337,7691,7732,7790,7828,8083,8105,8235,8345,8406,8617,8643,8735,8748,9275,
+9287,9356,9544,9544,9660,9676,9730,9741,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 77:
+sort file chunk[77] with size 100:
+----------------------------------------------------------------------
+36,100,223,541,566,919,1015,1077,1434,1439,1462,1500,1647,1651,1739,1880,
+1941,2150,2175,2187,2416,2462,2489,2843,3017,3041,3117,3141,3191,3313,3348,
+3457,3531,3624,3631,3669,3685,3741,3766,3786,3855,4103,4279,4485,4552,4733,
+4733,4773,5054,5385,5415,5605,5623,5794,5829,5940,5990,6105,6129,6165,6449,
+6637,6701,6728,6749,6931,6949,7014,7092,7234,7255,7307,7371,7468,7700,7739,
+7855,7869,7882,7985,8039,8275,8345,8397,8494,8618,8618,8629,8956,9269,9418,
+9445,9493,9553,9591,9601,9624,9763,9853,9977,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 78:
+sort file chunk[78] with size 100:
+----------------------------------------------------------------------
+226,245,262,272,423,433,482,538,649,757,950,1197,1250,1399,1400,1505,1523,
+1708,1839,2021,2336,2387,2406,2501,2516,2560,2569,2593,2791,2901,3036,3058,
+3103,3289,3326,3358,3423,3460,3496,3623,3751,3874,4052,4408,4753,4777,4992,
+5048,5140,5188,5213,5221,5237,5290,5312,5478,5714,5755,5882,6042,6334,6343,
+6350,6368,6378,6472,6792,6803,6885,7080,7184,7303,7500,7501,7502,7554,7625,
+7710,7833,7905,7913,8030,8156,8175,8197,8244,8325,8743,8963,8998,9006,9144,
+9647,9667,9833,9869,9886,9941,9961,9965,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 79:
+sort file chunk[79] with size 100:
+----------------------------------------------------------------------
+52,127,193,307,341,448,469,815,855,1071,1147,1151,1187,1274,1341,1469,1626,
+1672,1686,1730,1773,1820,1939,2121,2152,2198,2426,2512,2625,2685,3138,3554,
+3569,3570,3572,3599,3676,3729,3853,3887,4189,4274,4342,4469,4578,4591,4682,
+4799,4809,4885,4983,5052,5370,5710,5737,6226,6303,6303,6397,6475,6639,6671,
+6780,6786,6884,6909,6957,6961,7097,7342,7354,7453,7551,7630,7711,7892,7933,
+7946,7976,8214,8236,8274,8357,8409,8440,8542,8550,8703,8720,8749,9120,9192,
+9432,9468,9496,9566,9605,9699,9782,9912,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 80:
+sort file chunk[80] with size 100:
+----------------------------------------------------------------------
+54,111,230,324,351,453,767,935,996,1091,1262,1504,1604,1772,1775,1790,1910,
+1943,2233,2373,2486,2566,2655,2769,2869,2977,3022,3049,3211,3305,3363,3408,
+3411,3544,3558,3702,3811,3836,3947,4275,4291,4292,4319,4456,4483,4543,4563,
+4574,4655,4691,4736,4821,4940,5029,5115,5116,5231,5297,5366,5418,5422,5539,
+5680,5681,6041,6050,6119,6192,6328,6378,6591,6664,6751,6751,7178,7186,7484,
+7553,7590,7599,7628,7923,7936,7993,8067,8074,8256,8438,8497,8855,8877,9000,
+9012,9055,9245,9535,9631,9645,9656,9945,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 81:
+sort file chunk[81] with size 100:
+----------------------------------------------------------------------
+78,181,192,251,420,450,485,709,830,916,955,1013,1055,1134,1478,1701,1858,
+1861,1917,1925,2144,2145,2154,2177,2202,2264,2284,2311,2324,2757,2861,2891,
+3011,3106,3165,3213,3348,3545,3566,3585,3677,3703,3823,3927,3962,3980,4034,
+4047,4414,4449,4470,4709,4797,5246,5265,5473,5515,5530,5561,5657,5738,5752,
+5983,6024,6192,6681,6752,6805,6972,7155,7181,7257,7277,7299,7396,7431,7523,
+7605,7633,7691,7757,7871,7922,8069,8118,8205,8223,8321,8473,8540,8663,8779,
+9131,9199,9397,9417,9550,9627,9670,9939,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 82:
+sort file chunk[82] with size 100:
+----------------------------------------------------------------------
+25,111,498,695,776,777,995,1022,1256,1346,1504,1504,1519,1785,1927,1996,
+2208,2228,2229,2633,2672,2855,2872,2945,2961,3092,3158,3158,3242,3277,3288,
+3376,3376,3426,3452,3561,3630,3698,3895,4071,4226,4429,4445,4502,4684,4698,
+4755,4765,4770,4779,4781,4953,5020,5107,5146,5156,5494,5535,5591,5617,5825,
+5955,6054,6127,6163,6183,6195,6340,6483,6529,6709,7004,7065,7132,7194,7401,
+7476,7502,7590,7634,7713,7745,7764,7854,7855,7900,8152,8160,8400,8508,8628,
+8633,8691,8714,9047,9068,9088,9293,9553,9902,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 83:
+sort file chunk[83] with size 100:
+----------------------------------------------------------------------
+86,436,489,558,611,739,849,1020,1023,1086,1226,1356,1377,1459,1597,1611,
+1691,1708,1764,1850,2020,2093,2159,2317,2357,2369,2508,2690,2703,2746,2881,
+3031,3263,3324,3326,3453,3536,3601,3658,3845,3860,3871,3906,3960,4044,4073,
+4286,4330,4387,4402,4446,4467,4539,4623,4720,4734,4738,5271,5296,5349,5436,
+5499,5575,5785,5786,5819,6079,6088,6238,6257,6287,6579,6674,6690,6744,6922,
+7325,7510,7622,7937,8082,8334,8336,8602,8613,8669,8706,8850,8909,8954,9110,
+9206,9223,9292,9306,9491,9502,9602,9602,9947,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 84:
+sort file chunk[84] with size 100:
+----------------------------------------------------------------------
+61,89,136,146,260,271,279,331,407,546,643,910,1012,1287,1305,1391,1411,
+1454,1460,1608,1630,1670,1692,1756,1939,2128,2205,2229,2234,2559,2571,2818,
+2989,3109,3143,3192,3230,3338,3345,3375,3449,3577,3656,3842,3890,4697,4701,
+4738,4760,4864,4909,4952,5080,5133,5165,5265,5315,5459,5554,5777,5878,6046,
+6064,6238,6451,6542,6594,6627,6709,6720,7265,7424,7425,7656,7669,7726,8201,
+8275,8494,8650,8664,8768,8834,8974,8996,9116,9165,9178,9185,9214,9288,9483,
+9670,9673,9721,9773,9856,9900,9924,9933,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 85:
+sort file chunk[85] with size 100:
+----------------------------------------------------------------------
+143,178,257,267,281,441,522,840,972,1106,1208,1322,1399,1740,2081,2105,
+2111,2136,2212,2272,2295,2357,2597,2614,2824,2994,3001,3222,3235,3320,3353,
+3542,3597,3698,3701,3761,3824,3964,4129,4536,4613,4700,4719,5148,5180,5223,
+5370,5383,5565,5608,5701,5706,5889,5901,6279,6281,6407,6519,6568,6611,6642,
+6646,6662,6827,6830,6852,6894,6919,7006,7302,7315,7345,7424,7464,7911,7968,
+8023,8129,8432,8665,8693,8734,8758,8784,8906,8924,8999,9132,9332,9365,9513,
+9546,9599,9625,9827,9858,9916,9919,9925,9970,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 86:
+sort file chunk[86] with size 100:
+----------------------------------------------------------------------
+58,96,136,600,665,751,779,827,1008,1165,1643,1647,1658,1909,1934,2091,2127,
+2312,2684,2691,2765,2842,2911,2913,3053,3136,3666,3776,3873,3888,3898,3968,
+4071,4132,4190,4213,4233,4687,4707,4719,4798,4820,4856,4978,4988,4992,5105,
+5166,5282,5345,5388,5640,5712,5737,5802,5864,5873,5919,5920,6153,6155,6183,
+6240,6493,6580,6688,6736,6774,6948,7209,7341,7695,7742,7761,7830,7928,7956,
+7962,7978,7980,8051,8073,8185,8200,8205,8343,8370,8505,8651,8832,9027,9075,
+9098,9198,9297,9437,9700,9872,9874,9912,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 87:
+sort file chunk[87] with size 100:
+----------------------------------------------------------------------
+105,260,427,547,550,584,635,676,747,865,1042,1196,1350,1440,1456,1505,1566,
+1780,2122,2122,2123,2132,2199,2327,2507,2521,2675,2676,2856,3019,3089,3124,
+3220,3254,3338,3354,3365,3408,3553,3647,3826,3936,3956,4126,4267,4297,4331,
+4404,4465,4483,4488,4520,4593,4659,4661,4768,4854,4888,5025,5042,5150,5153,
+5280,5288,5604,5825,5856,5998,6139,6201,6402,6533,6932,6946,7251,7296,7336,
+7363,7407,7651,7793,8062,8099,8154,8228,8277,8362,8493,8560,8813,8814,9033,
+9040,9048,9064,9179,9648,9670,9717,9946,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 88:
+sort file chunk[88] with size 100:
+----------------------------------------------------------------------
+100,124,140,218,342,398,404,656,747,790,951,1009,1038,1052,1174,1330,1368,
+1441,1508,1511,1696,1864,2264,2436,2455,2464,2498,2717,2744,2832,3127,3157,
+3240,3285,3294,3392,3431,3620,3671,3675,3726,3834,3843,4049,4118,4139,4212,
+4216,4352,4367,4421,4470,4670,4865,4877,4922,4922,5032,5065,5106,5152,5320,
+5356,5365,5422,5542,5711,5817,6058,6092,6341,6630,6655,6671,6786,6801,6851,
+6929,7086,7141,7185,7232,7259,7343,7455,7666,7752,7771,7946,8521,8546,8638,
+8874,9008,9088,9217,9411,9587,9944,9960,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 89:
+sort file chunk[89] with size 100:
+----------------------------------------------------------------------
+13,140,237,498,509,595,725,741,770,874,904,1020,1069,1114,1136,1240,1388,
+1573,1703,1704,1791,1795,1832,1864,1930,2001,2015,2163,2232,2285,2530,2614,
+2668,2682,2721,2773,3012,3204,3409,3413,3616,3704,3725,3827,3880,3979,4074,
+4117,4365,4399,4495,4574,4575,4635,4776,4840,4865,4951,5113,5153,5274,5292,
+5357,5358,5553,5579,5684,5743,5867,5912,6339,6551,6567,6638,6795,7102,7315,
+7341,7392,7570,7638,7667,7698,7792,7794,7844,8034,8098,8197,8274,8385,8697,
+8840,9297,9331,9468,9524,9606,9915,9950,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 90:
+sort file chunk[90] with size 100:
+----------------------------------------------------------------------
+148,261,360,471,540,661,700,820,993,1047,1064,1132,1174,1286,1491,1613,
+1624,1641,1692,1779,2095,2327,2770,2789,2919,3002,3030,3082,3183,3264,3271,
+3484,3492,3589,3641,3692,3721,3861,3863,3967,4102,4105,4189,4198,4335,4668,
+4799,4927,4934,5330,5432,5474,5575,5694,5823,5847,5894,5953,5962,6074,6159,
+6228,6248,6299,6328,6515,6573,6709,6949,7010,7075,7130,7300,7336,7413,7416,
+7434,7451,7560,7596,7647,7679,7689,7723,7872,7943,8232,8449,8464,8632,8728,
+8920,9219,9222,9256,9400,9596,9614,9818,9921,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 91:
+sort file chunk[91] with size 100:
+----------------------------------------------------------------------
+323,363,388,499,537,614,631,733,988,1149,1173,1186,1189,1483,1568,1631,
+1713,1721,1790,1832,1963,1977,2004,2039,2108,2151,2237,2349,2474,2646,2705,
+2814,2816,2871,2921,3025,3355,3452,3455,3485,3750,3863,4201,4297,4374,4414,
+4483,4580,4837,5224,5318,5335,5362,5475,5531,5797,5810,5877,5987,6035,6227,
+6285,6410,6482,6551,6639,6879,6891,7101,7101,7203,7210,7237,7281,7424,7428,
+7572,7605,7666,7843,7964,8000,8085,8107,8169,8364,8379,8456,8535,8770,8780,
+8915,9117,9186,9257,9450,9727,9859,9952,9973,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 92:
+sort file chunk[92] with size 100:
+----------------------------------------------------------------------
+158,166,226,369,404,446,525,541,545,605,773,866,908,946,1021,1026,1134,
+1247,1305,1334,1342,1404,1421,1565,1582,1609,1677,1711,1720,1769,1789,1918,
+1960,1999,2239,2266,2309,2321,2418,2502,2582,2749,2818,2937,3053,3100,3230,
+3324,3356,3389,3492,3531,3589,3617,3848,3876,3991,4297,4450,4529,4535,4650,
+4686,4716,5084,5383,5416,5553,5599,5653,5800,5944,6160,6289,6291,6416,6733,
+6766,7084,7125,7332,7477,7738,7749,7856,8057,8446,8478,8489,8501,8627,8684,
+8765,8951,8953,8997,9027,9101,9284,9581,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 93:
+sort file chunk[93] with size 100:
+----------------------------------------------------------------------
+103,197,366,594,658,875,1053,1127,1220,1249,1394,1502,1696,1781,2008,2023,
+2041,2175,2181,2201,2215,2299,2486,2505,2636,2645,2753,2766,3040,3052,3340,
+3360,3388,3434,3497,3610,3828,3931,4050,4056,4075,4158,4192,4277,4447,4562,
+4745,4920,4981,5099,5133,5175,5204,5383,5420,5624,5666,5747,5785,5868,5921,
+5930,5937,6067,6087,6174,6240,6497,6557,6612,6659,6827,6878,7082,7111,7202,
+7299,7381,7403,7424,7503,7515,7706,7814,7879,7880,7933,8217,8932,9068,9079,
+9082,9248,9261,9460,9493,9582,9735,9935,9987,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 94:
+sort file chunk[94] with size 100:
+----------------------------------------------------------------------
+6,50,162,218,321,352,419,508,524,611,671,678,807,883,911,932,1079,1110,
+1144,1295,1566,1632,1749,1982,2010,2076,2340,2369,2986,3015,3057,3170,3328,
+3366,3429,3470,3480,3518,3529,3530,3632,3650,3806,3876,4051,4088,4257,4359,
+4709,4724,4799,4817,4942,5002,5176,5204,5280,5426,5500,5598,6062,6074,6092,
+6320,6402,6431,6503,6594,6634,6672,6684,6861,6937,6943,6958,7030,7369,7407,
+7433,7576,7606,7938,7999,8159,8314,8322,8344,8464,8594,8813,8821,8826,8854,
+8859,9202,9259,9299,9443,9521,9945,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 95:
+sort file chunk[95] with size 100:
+----------------------------------------------------------------------
+45,89,121,142,160,194,383,477,665,1286,1760,1823,1863,1865,1879,2105,2239,
+2318,2491,2804,3318,3364,3399,3500,3623,3623,3657,3676,3775,3808,3838,4010,
+4052,4116,4151,4204,4242,4245,4277,4283,4345,4527,4582,4644,4790,4870,4883,
+4985,5103,5294,5350,5498,5511,5584,5673,5686,5857,5876,5989,6196,6214,6539,
+6679,6817,6997,7144,7207,7236,7257,7393,7398,7493,7510,7800,7834,7923,8054,
+8159,8347,8460,8531,8616,8619,8621,8662,8723,8805,8824,8831,8947,9067,9174,
+9364,9594,9681,9782,9830,9857,9968,9978,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 96:
+sort file chunk[96] with size 100:
+----------------------------------------------------------------------
+77,143,321,347,371,386,401,486,527,619,642,704,896,958,1114,1353,1384,1390,
+1392,1400,1436,1628,1726,1793,2121,2152,2167,2268,2436,2439,2589,2754,2820,
+2878,2944,3009,3030,3065,3313,3330,3406,3414,3575,3617,3817,4052,4138,4225,
+4273,4280,4402,4448,4797,4894,4906,4915,4920,4921,4954,5750,5759,5858,5912,
+5953,6544,6693,6706,6746,6892,6945,6980,7026,7056,7059,7067,7180,7327,7339,
+7433,7468,7566,7665,7801,7880,8211,8250,8266,8635,8677,8753,8806,8886,9011,
+9122,9126,9455,9489,9585,9630,9759,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 97:
+sort file chunk[97] with size 100:
+----------------------------------------------------------------------
+15,66,89,248,718,855,999,1101,1531,1584,1635,1738,1807,1923,1963,1980,2049,
+2124,2361,2400,2535,2578,2832,2849,2863,2881,2886,2906,3106,3113,3252,3256,
+3257,3386,3500,3706,3811,3824,3844,3863,3897,3922,3956,4058,4069,4551,4867,
+4915,4955,5175,5176,5208,5237,5312,5342,5425,5432,5921,5944,6086,6094,6178,
+6421,6512,6522,6611,6619,6797,6863,6891,6918,7072,7075,7078,7121,7129,7239,
+7246,7308,7346,7412,7424,7601,7718,7789,8017,8103,8174,8636,8652,8700,8955,
+8977,9215,9233,9566,9598,9683,9848,9917,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 98:
+sort file chunk[98] with size 100:
+----------------------------------------------------------------------
+143,360,513,743,821,959,1064,1151,1499,1645,1774,1785,1799,1840,1854,1939,
+2079,2204,2398,2398,2439,2440,2483,2697,2712,2834,2932,3032,3136,3166,3181,
+3388,3523,3579,3837,3862,3877,4031,4172,4291,4326,4375,4444,4520,4657,4740,
+4772,4928,4944,4944,4977,5007,5049,5083,5171,5437,5472,5595,5642,5667,5682,
+5901,5901,5912,5944,5973,6072,6257,6258,6415,6442,6558,6562,6923,6957,7140,
+7266,7294,7380,7392,7622,7641,7658,8073,8080,8139,8486,8493,8608,8679,9032,
+9055,9085,9315,9323,9379,9554,9729,9891,9920,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 99:
+sort file chunk[99] with size 100:
+----------------------------------------------------------------------
+105,301,817,964,1035,1199,1404,1428,1493,1598,1709,1801,1899,1928,2042,
+2104,2114,2296,2334,2359,2436,2486,2579,2791,2878,2910,2919,3027,3063,3315,
+3331,3460,3475,3713,4036,4248,4275,4349,4585,4606,4787,4791,4806,5106,5109,
+5132,5281,5313,5438,5479,5502,5890,5900,5955,6035,6062,6119,6141,6353,6391,
+6609,6707,6724,6811,6863,6870,6883,6967,6972,6978,7025,7164,7260,7261,7264,
+7265,7278,7520,7673,7720,8049,8100,8141,8159,8189,8381,8398,8466,8684,8755,
+8899,8940,9141,9158,9240,9327,9349,9500,9588,9742,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 100:
+sort file chunk[100] with size 100:
+----------------------------------------------------------------------
+156,247,315,389,520,1086,1103,1116,1227,1323,1384,1511,1528,1733,1773,1773,
+1813,1920,1928,2106,2142,2278,2312,2335,2441,2610,2634,2667,3019,3032,3298,
+3322,3466,3712,3732,3752,4117,4341,4443,4502,4521,4575,4749,4783,4823,4862,
+4866,5002,5157,5260,5321,5525,5599,5626,5774,5906,6016,6030,6387,6458,6810,
+7023,7234,7358,7472,7499,7625,7653,7697,7805,7824,7835,7987,7988,8049,8065,
+8112,8174,8241,8280,8378,8410,8504,8596,8828,8952,8957,9058,9164,9175,9190,
+9354,9440,9684,9721,9770,9820,9833,9848,9865,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 101:
+sort file chunk[101] with size 100:
+----------------------------------------------------------------------
+25,114,283,364,467,768,1049,1153,1299,1313,1556,1572,1714,1761,1798,1857,
+2116,2126,2227,2268,2311,2449,2458,2518,2521,2577,2593,2806,2928,3121,3218,
+3377,3627,3696,3705,3891,4027,4101,4175,4287,4313,4332,4441,4471,4509,4524,
+4568,4732,4763,4786,4907,5120,5199,5306,5310,5375,5677,5684,5703,5813,5827,
+5837,5952,6004,6158,6307,6359,6399,6686,6707,6758,6836,7072,7176,7351,7581,
+7667,7708,7965,8205,8290,8375,8448,8474,8564,8619,8878,9313,9350,9461,9497,
+9563,9571,9618,9745,9756,9756,9839,9847,9893,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 102:
+sort file chunk[102] with size 100:
+----------------------------------------------------------------------
+46,251,295,334,498,674,749,1043,1080,1111,1212,1236,1318,1338,1363,1618,
+1650,1692,1742,1756,2054,2127,2141,2301,2371,2593,2750,2841,2989,2998,3082,
+3196,3310,3323,3360,3375,3537,3557,3594,3786,3809,3963,4073,4119,4180,4310,
+4494,4536,4751,4766,5061,5479,5498,5521,5533,5593,5629,5715,5718,5781,5982,
+5989,5996,6300,6487,6539,6549,6618,6649,6661,6697,6744,6944,7063,7176,7257,
+7444,7463,7628,7748,7790,7908,7947,8112,8240,8571,8740,9166,9186,9260,9389,
+9466,9492,9501,9569,9703,9709,9802,9934,9997,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 103:
+sort file chunk[103] with size 100:
+----------------------------------------------------------------------
+84,114,158,215,362,506,573,604,605,698,730,741,824,967,1074,1152,1166,1348,
+1352,1430,1432,1441,1590,1591,1668,1676,1883,1885,2001,2209,2281,2450,2659,
+2732,2896,3264,3306,3367,3515,3603,3660,3760,3908,3959,4246,4449,4464,4473,
+4645,4762,4860,5032,5448,5455,5560,5819,5846,6161,6272,6276,6390,6473,6500,
+6613,6652,6793,6833,6998,7000,7243,7267,7284,7673,7677,7729,7753,7770,7877,
+7958,8115,8150,8159,8252,8316,8399,8750,8777,9009,9051,9191,9430,9530,9533,
+9659,9767,9805,9811,9818,9856,9994,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 104:
+sort file chunk[104] with size 100:
+----------------------------------------------------------------------
+178,362,423,552,812,881,888,1064,1065,1082,1284,1456,1479,1512,1568,1579,
+1802,1935,1963,1987,1995,2079,2172,2242,2246,2328,2466,2550,2860,2866,3137,
+3276,3412,3455,3514,3517,3520,3598,3632,3683,3689,3880,4000,4025,4307,4313,
+4585,4781,4903,5036,5331,5352,5362,5727,5775,5860,5949,6044,6058,6088,6192,
+6311,6354,6492,6515,6662,6680,6731,7316,7405,7437,7558,7683,7686,7756,7793,
+7870,7888,7968,8036,8041,8336,8339,8373,8458,8466,8491,8562,8562,8739,8800,
+8939,9041,9183,9230,9377,9602,9669,9736,9841,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 105:
+sort file chunk[105] with size 100:
+----------------------------------------------------------------------
+96,177,283,293,370,447,474,513,524,565,690,788,899,980,1095,1170,1766,1820,
+1914,1942,1997,2190,2280,2298,2331,2395,2488,2527,2538,2694,2721,3085,3101,
+3184,3260,3390,3390,3478,3488,3498,3715,3772,3773,3899,3926,3932,4021,4024,
+4119,4147,4251,4269,4287,4495,4692,4710,4882,4892,5019,5170,5184,5326,5506,
+5590,5650,5914,6020,6089,6196,6478,6618,6732,6982,7034,7434,7450,7454,7515,
+7537,7635,7664,7810,7853,7894,8072,8188,8512,8521,8555,8689,8729,8931,9324,
+9440,9466,9470,9605,9623,9693,9890,
+----------------------------------------------------------------------
+
+
+Phase 1 : Sorted file chunks 106:
+sort file chunk[106] with size 100:
+----------------------------------------------------------------------
+66,134,139,144,227,328,360,470,553,591,615,659,681,692,695,768,830,1006,
+1017,1017,1029,1041,1333,1383,1406,1504,1681,1819,1830,1865,2016,2173,2214,
+2226,2378,2395,2463,2648,2672,2709,2796,2864,2877,2890,2907,3047,3194,3207,
+3275,3283,3360,3389,3403,3446,3463,3490,3768,3820,4214,4325,4339,4351,4581,
+4653,4946,5026,5373,5528,5908,6026,6060,6171,6215,6693,6788,7032,7033,7176,
+7353,7515,7534,7548,7567,7576,7668,7786,7857,8016,8403,8527,8586,8691,8965,
+8975,9019,9232,9297,9363,9728,9811,
+----------------------------------------------------------------------
+
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 81 ms : 120886 ns
+
+
+Process finished with exit code 0
+
+-----------------------------------------------------
