@@ -1,7 +1,7 @@
-Zach Rooney
-CS 1C
+minHead Project
 
-rooneyz-project08
+This project was to create a minHeap in order to sort a large CSV file of numbers. There was simulated memory restrictions 
+which had to be accounted for. The main file is SortFileData.java
 
 
 Brief description of submitted files:
